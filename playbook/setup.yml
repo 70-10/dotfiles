@@ -1,0 +1,7 @@
+- name: test
+  hosts: all
+  connection: local
+  roles:
+    - symlink
+    - golang
+    - atom

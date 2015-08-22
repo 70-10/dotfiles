@@ -1,0 +1,19 @@
+[alias]
+  st = status
+  ss = status -s
+  aa = add .
+  co = checkout
+  cm = commit
+  cmm = commit -m
+  nffmerge = merge --no-ff
+  ba = branch -a
+  bv = branch -vv
+  rv = remote -v
+  ra = remote add
+  tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
+  ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
+	pom = push origin master
+[color]
+  ui = auto
+[core]
+	excludesfile = ~/.gitignore_global

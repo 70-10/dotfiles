@@ -1,0 +1,15 @@
+compile-cache
+dev
+npm-debug.log
+packages
+storage
+.apm
+.npm
+.node-gyp
+
+config.cson
+init.coffee
+keymap.cson
+projects.cson
+snippets.cson
+styles.less

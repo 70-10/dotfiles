@@ -1,0 +1,15 @@
+- name: register home path
+  command: echo $HOME
+  register: HOME_PATH
+
+- name: config.cson
+  template:
+    src: "{{ item }}.j2"
+    dest: "~/dotfiles/.atom/{{ item }}"
+  with_items:
+    - config.cson
+    - init.coffee
+    - keymap.cson
+    - projects.cson
+    - snippets.cson
+    - styles.less

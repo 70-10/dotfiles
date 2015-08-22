@@ -1,0 +1,8 @@
+dotfiles
+===
+
+## Usage
+
+```
+$ ./setup.sh
+```

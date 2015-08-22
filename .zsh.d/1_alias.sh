@@ -1,0 +1,1 @@
+alias history='history -i'

@@ -1,0 +1,54 @@
+"*":
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    preferredLineLength: 240
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    invisibles: {}
+    fontFamily: "Ricty Diminished"
+  core:
+    themes: [
+      "atom-material-ui"
+      "monokai"
+    ]
+    disabledPackages: [
+      "linter-jshint"
+      "linter-jsxhint"
+    ]
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  linter:
+    ignoredLinterErrors: [
+      "ruby"
+    ]
+  "markdown-preview":
+    breakOnSingleNewline: true
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  minimap: {}
+  "linter-jshint": {}
+  "go-plus": {}
+  react: {}
+  dash:
+    grammars:
+      JavaScript: [
+        "nodejs"
+      ]
+      Markdown: [
+        "markdown"
+      ]
+  "linter-eslint":
+    useGlobalEslint: true
+    globalNodePath: "{{ HOME_PATH.stdout }}/.nodebrew/current"
+    disableWhenNoEslintrcFileInPath: true
+  "git-projects":
+    rootPath: "{{ HOME_PATH.stdout }}/develop"
+".json5.source":
+  editor:
+    preferredLineLength: 240

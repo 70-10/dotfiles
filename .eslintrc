@@ -1,0 +1,24 @@
+---
+  env:
+    node: true
+    browser: true
+    mocha: true
+    es6: true
+  parser: "babel-eslint"
+  ecmaFeatures:
+    arrowFunctions: true
+    blockBindings: true
+    classes: true
+    defaultParams: true
+    forOf: true
+    generators: true
+    jsx: true
+  plugins:
+    - react
+  rules:
+    strict:
+      - 2
+      - "global"
+    no-trailing-spaces:
+      - 0
+    no-underscore-dangle: 0
