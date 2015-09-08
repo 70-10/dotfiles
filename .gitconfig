@@ -17,3 +17,6 @@
   ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B

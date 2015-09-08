@@ -13,3 +13,10 @@ trim_trailing_whitespace = false
 
 [*.java]
 indent_size = 4
+
+[*.h]
+indent_size = 4
+
+[*.m]
+indent_size = 4
+
