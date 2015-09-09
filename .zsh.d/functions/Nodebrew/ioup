@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-nodebrew install-binary io@latest;
-nodebrew use io@latest;
-npm i babel gulp eslint babel-eslint eslint-plugin-react npm-check-updates -g;
+nodebrew install-binary latest;
+nodebrew use latest;
+npm i babel gulp eslint babel-eslint eslint-plugin-react npm-check-updates coffee-script bower -g;
