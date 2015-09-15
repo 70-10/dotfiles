@@ -1,5 +1,6 @@
 [alias]
   st = status
+  sb = status --branch --short
   ss = status -s
   aa = add .
   co = checkout
@@ -12,7 +13,8 @@
   ra = remote add
   tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
   ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
-	pom = push origin master
+  fp = fetch --prune
+  ps = push
 [color]
   ui = auto
 [core]
