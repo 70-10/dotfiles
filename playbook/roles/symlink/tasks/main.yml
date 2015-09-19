@@ -3,17 +3,4 @@
     src: "~/dotfiles/{{ item }}"
     dest: "~/{{ item }}"
     state: link
-  with_items:
-    - ".zlogin"
-    - ".zlogout"
-    - ".zpreztorc"
-    - ".zprofile"
-    - ".zshenv"
-    - ".zsh.d"
-    - ".zshrc"
-    - ".gitconfig"
-    - ".gitattributes"
-    - ".gitignore_global"
-    - ".editorconfig"
-    - ".eslintrc"
-    - ".atom"
+  with_items: dotfiles

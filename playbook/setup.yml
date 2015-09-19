@@ -1,7 +1,10 @@
 - name: test
   hosts: all
   connection: local
+  vars_files:
+    - "vars/settings.yml"
   roles:
     - symlink
+    - homebrew
     - golang
     - atom

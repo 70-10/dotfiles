@@ -1,0 +1,31 @@
+brew_packages:
+  - git
+  - go
+  - gradle
+  - hub
+  - mergepbx
+  - nodebrew
+  - pyenv
+  - rbenv
+  - ruby-build
+  - scala
+  - the_silver_searcher
+  - tig
+  - tree
+  - typesafe-activator
+  - zsh
+
+dotfiles:
+  - ".zlogin"
+  - ".zlogout"
+  - ".zpreztorc"
+  - ".zprofile"
+  - ".zshenv"
+  - ".zsh.d"
+  - ".zshrc"
+  - ".gitconfig"
+  - ".gitattributes"
+  - ".gitignore_global"
+  - ".editorconfig"
+  - ".eslintrc"
+  - ".atom"
