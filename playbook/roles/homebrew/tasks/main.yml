@@ -1,5 +1,25 @@
+- name: brew taps
+  homebrew_tap:
+    tap: "{{ item }}"
+    state: present
+  with_items: brew_taps
+
+- name: update homebrew
+  homebrew:
+    update_homebrew: yes
+
 - name: brew install
   homebrew:
     name: "{{ item }}"
-    state: latest
+    state: present
   with_items: brew_packages
+
+- name: brew cask install
+  homebrew:
+    name: brew-cask
+    state: latest
+- name: brew install cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: cask_packages

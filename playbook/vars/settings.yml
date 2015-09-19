@@ -1,19 +1,57 @@
+brew_taps:
+  - homebrew/versions
+  - caskroom/cask
+  - caskroom/versions
+
 brew_packages:
+  - ansible
+  - cmake
+  - curl
   - git
   - go
   - gradle
   - hub
+  - mercurial
   - mergepbx
+  - mysql
+  - nkf
   - nodebrew
   - pyenv
   - rbenv
   - ruby-build
   - scala
+  - sqlite
   - the_silver_searcher
   - tig
   - tree
   - typesafe-activator
+  - wget
   - zsh
+
+cask_packages:
+  - alfred
+  - appcleaner
+  - atom
+  - caffeine
+  - coteditor
+  - dropbox
+  - eclipse-ide
+  - evernote
+  - firefox-ja
+  - google-chrome
+  - google-drive
+  - google-japanese-ime
+  - intellij-idea-ce
+  - iterm2
+  - java
+  - kitematic
+  - qlmarkdown
+  - skitch
+  - skype
+  - sourcetree
+  - vagrant
+  - virtualbox
+  - xtrafinder
 
 dotfiles:
   - ".zlogin"
