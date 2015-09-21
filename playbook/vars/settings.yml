@@ -45,6 +45,7 @@ cask_packages:
   - iterm2
   - java
   - kitematic
+  - kobito
   - qlmarkdown
   - skitch
   - skype
