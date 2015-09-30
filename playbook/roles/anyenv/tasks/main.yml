@@ -1,0 +1,15 @@
+- name: uninstall rbenv, pyenv, go
+  homebrew:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - go
+    - pyenv
+    - rbenv
+    - ruby-build
+
+- name: git clone
+  git:
+    clone: yes
+    repo: https://github.com/riywo/anyenv
+    dest: ~/.anyenv
