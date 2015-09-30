@@ -1,0 +1,5 @@
+- name: git clone
+  git:
+    clone: yes
+    repo: https://github.com/riywo/anyenv
+    dest: ~/.anyenv
