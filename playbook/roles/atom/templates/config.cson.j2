@@ -32,7 +32,9 @@
     usePreviewTabs: true
   "autocomplete-plus":
     confirmCompletion: "enter"
-  minimap: {}
+  minimap:
+    plugins:
+      "git-diff": true
   "linter-jshint": {}
   "go-plus": {}
   react: {}
@@ -50,6 +52,9 @@
     disableWhenNoEslintrcFileInPath: true
   "git-projects":
     rootPath: "{{ HOME_PATH.stdout }}/develop"
+".nginx.source":
+  editor:
+    preferredLineLength: 240
 ".json5.source":
   editor:
     preferredLineLength: 240
