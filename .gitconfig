@@ -1,20 +1,23 @@
 [alias]
-  st = status
-  sb = status --branch --short
-  ss = status -s
   aa = add .
-  co = checkout
-  cm = commit
-  cmm = commit -m
-  nffmerge = merge --no-ff
   ba = branch -a
   bv = branch -vv
-  rv = remote -v
-  ra = remote add
-  tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
-  ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
+  cf = config
+  cfg = config --global
+  cfl = config -l
+  cm = commit
+  cmm = commit -m
+  co = checkout
   fp = fetch --prune
+  ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
+  nffmerge = merge --no-ff
   ps = push
+  ra = remote add
+  rv = remote -v
+  sb = status --branch --short
+  ss = status -s
+  st = status
+  tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
 [color]
   ui = auto
 [core]
