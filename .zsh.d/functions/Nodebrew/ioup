@@ -2,4 +2,4 @@
 
 nodebrew install-binary latest;
 nodebrew use latest;
-npm i babel gulp eslint babel-eslint eslint-plugin-react npm-check-updates coffee-script bower typescript tsd -g;
+npm i babel gulp eslint babel-eslint eslint-plugin-react eslint-config-airbnb npm-check-updates coffee-script bower typescript tsd -g;
