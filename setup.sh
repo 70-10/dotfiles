@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ansible-playbook -i playbook/localhost playbook/setup.yml
+ansible-playbook -i playbook/hosts/local -t mac playbook/setup.yml
