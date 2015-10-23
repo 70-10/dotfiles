@@ -9,6 +9,7 @@ brew_packages:
   - curl
   - git
   - gradle
+  - httpie
   - hub
   - mercurial
   - mergepbx
