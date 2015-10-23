@@ -1,8 +1,7 @@
-- name: test
-  hosts: all
-  connection: local
-  vars_files:
-    - "vars/settings.yml"
+- name: setup for mac
+  hosts: mac
+  gather_facts: no
+  tags: mac
   roles:
     - symlink
     - homebrew

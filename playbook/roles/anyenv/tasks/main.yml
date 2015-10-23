@@ -8,8 +8,13 @@
     - rbenv
     - ruby-build
 
+- stat:
+    path: ~/.anyenv
+  register: anyenv_dir
+
 - name: git clone
   git:
     clone: yes
     repo: https://github.com/riywo/anyenv
     dest: ~/.anyenv
+  when: not anyenv_dir.stat.exists
