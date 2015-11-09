@@ -33,7 +33,7 @@ cask_packages:
   - caffeine
   - coteditor
   - dropbox
-  - eclipse-ide
+  - eclipse-jee
   - evernote
   - firefox-ja
   - google-chrome
