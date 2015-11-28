@@ -18,3 +18,19 @@
     repo: https://github.com/riywo/anyenv
     dest: ~/.anyenv
   when: not anyenv_dir.stat.exists
+
+- name: create plugins directory
+  file:
+    path: ~/.anyenv/plugins
+    state: directory
+
+- stat:
+    path: ~/.anyenv/plugins/anyenv-update
+  register: update_dir
+
+- name: git clone anyenv-update
+  git:
+    clone: yes
+    repo: https://github.com/znz/anyenv-update.git
+    dest: ~/.anyenv/plugins/anyenv-update
+  when: not update_dir.stat.exists
