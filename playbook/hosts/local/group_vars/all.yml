@@ -47,6 +47,7 @@ cask_packages:
   - kobito
   - pycharm-ce
   - qlmarkdown
+  - rdm
   - skitch
   - skype
   - sourcetree
