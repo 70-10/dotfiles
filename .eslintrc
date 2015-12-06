@@ -1,24 +1,30 @@
----
-  env:
-    node: true
-    browser: true
-    mocha: true
-    es6: true
-  parser: "babel-eslint"
-  ecmaFeatures:
-    arrowFunctions: true
-    blockBindings: true
-    classes: true
-    defaultParams: true
-    forOf: true
-    generators: true
-    jsx: true
-  plugins:
-    - react
-  rules:
-    strict:
-      - 2
-      - "global"
-    no-trailing-spaces:
-      - 0
-    no-underscore-dangle: 0
+rules:
+  array-bracket-spacing: 2
+  block-spacing: 2
+  brace-style: [2, "1tbs"]
+  camelcase: [2, {properties: "never"}]
+  comma-spacing: [2, {before: false, "after": true}]
+  comma-style: [2, "last"]
+  computed-property-spacing: 2
+  eol-last: 2
+  func-style: [2, "declaration"]
+  indent: [2, 2, {SwitchCase: 1}]
+  key-spacing: [2, {beforeColon: false, afterColon: true}]
+  linebreak-style: [2, "unix"]
+  new-cap: 2
+  quotes: [2, "double"]
+  semi: [2, "always"]
+
+  # 設定したい
+  # max-depth: [2, 2]
+  # max-nested-callbacks: [2, 3]
+  # max-params: [2, 3]
+env:
+  es6: true
+  browser: true
+# extends: 'eslint:recommended'
+ecmaFeatures:
+  jsx: true
+  experimentalObjectRestSpread: true
+plugins:
+  - react
