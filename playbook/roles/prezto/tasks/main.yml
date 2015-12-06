@@ -1,0 +1,22 @@
+- name: change shell
+  sudo : yes
+  user:
+    name: vagrant
+    shell: /usr/bin/zsh
+
+- name: download antigen
+  git:
+    repo: https://github.com/zsh-users/antigen.git
+    dest: ~/.antigen
+
+- name: download prezto
+  shell: "source $HOME/.antigen/antigen.zsh; antigen bundle sorin-ionescu/prezto"
+  args:
+    chdir: ~/
+    executable: /usr/bin/zsh
+
+- name: link prezto
+  file:
+    src: ~/.antigen/repos/.zprezto
+    dest: ~/.zprezto
+    state: link
