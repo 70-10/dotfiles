@@ -3,6 +3,14 @@ dotfiles
 
 ## Usage
 
+### Mac
+
 ```
-$ ./setup.sh
+$ ./mac.sh
+```
+
+### Ubuntu
+
+```
+$ ./ubuntu.sh
 ```
