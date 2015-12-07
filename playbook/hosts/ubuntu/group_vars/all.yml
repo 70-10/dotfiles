@@ -1,13 +1,25 @@
 apt_packages:
   - curl
   - direnv
+  - gcc
   - git
+  - gradle
   - httpie
+  - libbz2-dev
+  - libreadline-dev
+  - libssl-dev
+  - libsqlite3-dev
+  - make
+  - nkf
+  - openssl
+  - silversearcher-ag
   - tig
   - tree
   - vim
   - wget
   - zsh
+
+
 
 dotfiles:
   - ".zlogin"
