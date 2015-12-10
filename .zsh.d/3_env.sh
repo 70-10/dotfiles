@@ -3,4 +3,4 @@ if [ -d $HOME/.anyenv ] ; then
     eval "$(anyenv init -)"
 fi
 
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
