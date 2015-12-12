@@ -29,6 +29,7 @@ brew_packages:
 
 cask_packages:
   - alfred
+  - android-studio
   - appcleaner
   - atom
   - caffeine
@@ -45,6 +46,7 @@ cask_packages:
   - java
   - kitematic
   - kobito
+  - onyx
   - pycharm-ce
   - qlmarkdown
   - rdm
@@ -53,6 +55,7 @@ cask_packages:
   - sourcetree
   - vagrant
   - virtualbox
+  - visual-studio-code
   - xtrafinder
 
 dotfiles:
