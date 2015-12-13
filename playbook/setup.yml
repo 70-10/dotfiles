@@ -1,6 +1,6 @@
 - name: setup for mac
   hosts: mac
-  gather_facts: no
+  gather_facts: yes
   tags: mac
   roles:
     - symlink
@@ -8,3 +8,14 @@
     - golang
     - atom
     - anyenv
+
+- name: setup for ubuntu
+  hosts: ubuntu
+  gather_facts: yes
+  tags: ubuntu
+  roles:
+    - symlink
+    - apt-get
+    - prezto
+    - anyenv
+    - nodebrew

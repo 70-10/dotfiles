@@ -1,0 +1,4 @@
+- name: install nodebrew
+  shell: "curl -L git.io/nodebrew | perl - setup"
+  args:
+    chdir: ~/
