@@ -6,6 +6,7 @@ storage
 .apm
 .npm
 .node-gyp
+blob-store
 
 config.cson
 init.coffee
