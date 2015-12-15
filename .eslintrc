@@ -7,7 +7,7 @@ rules:
   comma-style: [2, "last"]
   computed-property-spacing: 2
   eol-last: 2
-  func-style: [2, "declaration"]
+  func-style: [2, "declaration", { "allowArrowFunctions": true }]
   indent: [2, 2, {SwitchCase: 1}]
   key-spacing: [2, {beforeColon: false, afterColon: true}]
   linebreak-style: [2, "unix"]
