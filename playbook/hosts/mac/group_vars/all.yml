@@ -27,6 +27,7 @@ brew_packages:
   - wget
   - z
   - zsh
+  - zsh-completions
 
 cask_packages:
   - alfred
