@@ -25,6 +25,7 @@ brew_packages:
   - tree
   - typesafe-activator
   - wget
+  - z
   - zsh
 
 cask_packages:
