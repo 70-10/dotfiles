@@ -75,6 +75,7 @@ dotfiles:
   - ".eslintrc"
   - ".atom"
   - ".npmrc"
+  - ".golang"
 
 golang:
   packages:
