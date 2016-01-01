@@ -30,6 +30,7 @@ brew_packages:
   - zsh-completions
 
 cask_packages:
+  - 1password
   - alfred
   - android-studio
   - appcleaner
