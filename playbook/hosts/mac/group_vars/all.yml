@@ -57,7 +57,6 @@ cask_packages:
   - vagrant
   - virtualbox
   - visual-studio-code
-  - xtrafinder
 
 dotfiles:
   - ".zlogin"
