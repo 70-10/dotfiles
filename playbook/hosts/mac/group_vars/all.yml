@@ -8,6 +8,7 @@ brew_packages:
   - cmake
   - curl
   - direnv
+  - gibo
   - git
   - gradle
   - httpie
