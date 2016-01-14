@@ -5,6 +5,7 @@ brew_taps:
 
 brew_packages:
   - ansible
+  - awscli
   - cmake
   - curl
   - direnv
