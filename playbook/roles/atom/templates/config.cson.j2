@@ -1,43 +1,12 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    preferredLineLength: 240
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    invisibles: {}
-    fontFamily: "Ricty Diminished"
+  "autocomplete-plus":
+    confirmCompletion: "enter"
   core:
+    disabledPackages: []
     themes: [
       "atom-material-ui"
       "monokai"
     ]
-    disabledPackages: [
-      "linter-jshint"
-      "linter-jsxhint"
-    ]
-  welcome:
-    showOnStartup: false
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-  linter:
-    ignoredLinterErrors: [
-      "ruby"
-    ]
-  "markdown-preview":
-    breakOnSingleNewline: true
-    useGitHubStyle: true
-  tabs:
-    showIcons: true
-    usePreviewTabs: true
-  "autocomplete-plus":
-    confirmCompletion: "enter"
-  minimap:
-    plugins:
-      "git-diff": true
-  "linter-jshint": {}
-  "go-plus": {}
-  react: {}
   dash:
     grammars:
       JavaScript: [
@@ -46,15 +15,51 @@
       Markdown: [
         "markdown"
       ]
-  "linter-eslint":
-    useGlobalEslint: true
-    globalNodePath: "{{ HOME_PATH.stdout }}/.nodebrew/current"
-    disableWhenNoEslintrcFileInPath: true
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Ricty Diminished"
+    invisibles: {}
+    preferredLineLength: 240
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "ever-notedown": {}
+  "go-plus": {}
   "git-projects":
     rootPath: "{{ HOME_PATH.stdout }}/develop"
-".nginx.source":
+  linter:
+    ignoredLinterErrors: [
+      "ruby"
+    ]
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "{{ HOME_PATH.stdout }}/.nodebrew/current"
+    useGlobalEslint: true
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  minimap:
+    plugins:
+      "git-diff": true
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+  wakatime:
+    apikey: "{{ wakatime.apikey }}"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".evnd.gfm.html.inline.markdown.mathjax.source.text":
+  editor:
+    preferredLineLength: 240
+".evnd.html.inline":
   editor:
     preferredLineLength: 240
 ".json5.source":
+  editor:
+    preferredLineLength: 240
+".nginx.source":
   editor:
     preferredLineLength: 240

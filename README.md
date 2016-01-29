@@ -3,13 +3,17 @@ dotfiles
 
 ## Usage
 
-### Mac
+### Ansible Vault
+
+prepare `.vault_pass` immediately below directory
+
+### Setup for Mac
 
 ```
 $ ./mac.sh
 ```
 
-### Ubuntu
+### Setup for Ubuntu
 
 ```
 $ ./ubuntu.sh

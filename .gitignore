@@ -3,3 +3,6 @@
 !.golang/bin
 
 !.gitkeep
+
+### Ansible Vault ###
+.vault_pass

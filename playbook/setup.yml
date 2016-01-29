@@ -2,6 +2,8 @@
   hosts: mac
   gather_facts: yes
   tags: mac
+  vars_files:
+    - vars/secret.yml
   roles:
     - symlink
     - homebrew

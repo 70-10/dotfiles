@@ -8,4 +8,4 @@ if ! [ `which ansible` ]; then
   brew install ansible
 fi
 
-ansible-playbook -i playbook/hosts/mac -t mac playbook/setup.yml
+ansible-playbook -i playbook/hosts/mac -t mac playbook/setup.yml --vault-password-file .vault_pass
