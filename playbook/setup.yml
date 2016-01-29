@@ -3,6 +3,7 @@
   gather_facts: yes
   tags: mac
   vars_files:
+    - vars/main.yml
     - vars/secret.yml
   roles:
     - symlink
@@ -15,6 +16,8 @@
   hosts: ubuntu
   gather_facts: yes
   tags: ubuntu
+  vars_files:
+    - vars/main.yml
   roles:
     - symlink
     - apt-get

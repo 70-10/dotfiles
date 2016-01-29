@@ -61,23 +61,6 @@ cask_packages:
   - virtualbox
   - visual-studio-code
 
-dotfiles:
-  - ".zlogin"
-  - ".zlogout"
-  - ".zpreztorc"
-  - ".zprofile"
-  - ".zshenv"
-  - ".zsh.d"
-  - ".zshrc"
-  - ".gitconfig"
-  - ".gitattributes"
-  - ".gitignore_global"
-  - ".editorconfig"
-  - ".eslintrc"
-  - ".atom"
-  - ".npmrc"
-  - ".golang"
-
 golang:
   packages:
     - "code.google.com/p/go.tools/cmd/goimports"
