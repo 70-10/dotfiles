@@ -9,6 +9,7 @@ brew_packages:
   - cmake
   - curl
   - direnv
+  - docker-machine
   - gibo
   - git
   - gradle
