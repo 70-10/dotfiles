@@ -21,7 +21,6 @@ brew_packages:
   - nkf
   - nodebrew
   - peco
-  - scala
   - sqlite
   - the_silver_searcher
   - tig
