@@ -2,6 +2,7 @@ brew_taps:
   - homebrew/versions
   - caskroom/cask
   - caskroom/versions
+  - caskroom/fonts
 
 brew_packages:
   - ansible
@@ -61,6 +62,10 @@ cask_packages:
   - vagrant
   - virtualbox
   - visual-studio-code
+
+font_packages:
+  - camingocode
+  - ricty-diminished
 
 golang:
   packages:
