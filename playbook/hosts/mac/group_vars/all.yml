@@ -60,6 +60,7 @@ cask_packages:
   - skype
   - sourcetree
   - vagrant
+  - vagrant-manager
   - virtualbox
   - visual-studio-code
 
