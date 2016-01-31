@@ -70,7 +70,7 @@ font_packages:
 
 golang:
   packages:
-    - "code.google.com/p/go.tools/cmd/goimports"
+    - "golang.org/x/tools/cmd/goimports"
     - "github.com/golang/lint/golint"
     - "github.com/nsf/gocode"
     - "golang.org/x/tools/cmd/gorename"
