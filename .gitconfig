@@ -1,14 +1,20 @@
 [alias]
   aa = add .
   ba = branch -a
+  bd = branch -d
   bv = branch -vv
   cf = config
   cfg = config --global
   cfl = config -l
   cm = commit
+  cma = commit --amend
   cmm = commit -m
   co = checkout
+  d = diff
   fp = fetch --prune
+  info = remote show origin
+  l = log --stat --abbrev-commit -n 1
+  la = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
   ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
   nffmerge = merge --no-ff
   ps = push
