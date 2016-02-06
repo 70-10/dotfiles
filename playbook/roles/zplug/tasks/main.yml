@@ -1,0 +1,15 @@
+- stat:
+    path: "~{{ user }}/.zplug"
+  register: zplug_dir
+
+- name: set zplug
+  git:
+    repo: https://github.com/b4b4r07/zplug
+    dest: "~{{ user }}/.zplug"
+  when: not zplug_dir.stat.exists
+
+- name: set zplug shell
+  copy:
+    src: zplug.sh
+    dest: ~{{ user }}/.zsh.d/zplug.sh
+    mode: "644"

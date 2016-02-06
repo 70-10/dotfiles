@@ -22,6 +22,7 @@
     - apt-get
     - symlink
     - zsh
+    - zplug
     - prezto
     - anyenv
     - nodebrew
