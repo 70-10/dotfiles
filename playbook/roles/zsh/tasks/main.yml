@@ -1,0 +1,15 @@
+- name: change shell
+  sudo : yes
+  user:
+    name: "{{ user }}"
+    shell: /usr/bin/zsh
+
+- name: create .zsh.d
+  file:
+    path: "~{{ user }}/.zsh.d"
+    state: directory
+
+- name: create .zsh.d/functions
+  file:
+    path: "~{{ user }}/.zsh.d/functions"
+    state: directory
