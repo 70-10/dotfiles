@@ -1,4 +1,25 @@
+- stat:
+    path: "~{{ user }}/.nodebrew"
+  register: nodebrew_dir
+
 - name: install nodebrew
   shell: "curl -L git.io/nodebrew | perl - setup"
   args:
     chdir: ~/
+  when: not nodebrew_dir.stat.exists
+
+- name: set nodebrew shell
+  copy:
+    src: nodebrew.sh
+    dest: ~{{ user }}/.zsh.d/nodebrew.sh
+    mode: "644"
+
+- name: mkdir functions/nodebrew
+  file:
+    path: "~{{ user }}/.zsh.d/functions/Nodebrew"
+    state: directory
+
+- name: set nodeup commands
+  template:
+    src: nodeup.j2
+    dest: "~{{ user }}/.zsh.d/functions/Nodebrew/nodeup"
