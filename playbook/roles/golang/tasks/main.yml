@@ -1,3 +1,9 @@
 - name: go get
   command: "go get -u {{ item }}"
   with_items: golang.packages
+
+- name: set golang shell
+  copy:
+    src: golang.sh
+    dest: ~{{ user }}/.zsh.d/golang.sh
+    mode: "644"
