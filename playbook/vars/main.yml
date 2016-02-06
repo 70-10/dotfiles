@@ -14,3 +14,17 @@ dotfiles:
   - ".atom"
   - ".npmrc"
   - ".golang"
+
+node:
+  global_modules:
+    - babel-cli
+    - babel-eslint
+    - bower
+    - coffee-script
+    - eslint
+    - eslint-config-airbnb
+    - eslint-plugin-react
+    - gulp
+    - npm-check-updates
+    - tsd
+    - typescript
