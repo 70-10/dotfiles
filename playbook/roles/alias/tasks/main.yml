@@ -1,0 +1,5 @@
+- name: set alias shell
+  copy:
+    src: alias.sh
+    dest: ~{{ user }}/.zsh.d/alias.sh
+    mode: "644"

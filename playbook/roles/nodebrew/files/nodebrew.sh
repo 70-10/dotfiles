@@ -1,3 +1,3 @@
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-autoload -Uz ioup
+autoload -Uz nodeup

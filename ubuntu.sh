@@ -7,4 +7,4 @@ if ! [ `which ansible` ]; then
   sudo apt-get install ansible -y
 fi
 
-ansible-playbook -i playbook/hosts/ubuntu -t ubuntu playbook/setup.yml
+ansible-playbook -i playbook/hosts/ubuntu -t ubuntu playbook/setup.yml --vault-password-file .vault_pass

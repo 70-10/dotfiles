@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+nodebrew install-binary latest;
+nodebrew use latest;
+npm i -g{% for module in node.global_modules %} {{ module }}{% endfor %};

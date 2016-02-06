@@ -1,0 +1,5 @@
+alias cdu='cd-gitroot'
+alias ll='ls -l'
+alias la='ls -al'
+alias history='history -i'
+alias resource='source ~/.zshrc'

@@ -1,3 +1,12 @@
+- name: set brew shell
+  copy:
+    src: brew.sh
+    dest: ~{{ user }}/.zsh.d/brew.sh
+    mode: "644"
+
+- name: export
+  shell: source ~/.zshrc
+
 - name: brew taps
   homebrew_tap:
     tap: "{{ item }}"

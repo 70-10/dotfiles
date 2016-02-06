@@ -18,3 +18,5 @@ apt_packages:
   - vim
   - wget
   - zsh
+
+user: vagrant

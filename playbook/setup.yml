@@ -19,8 +19,10 @@
   vars_files:
     - vars/main.yml
   roles:
-    - symlink
     - apt-get
-    - prezto
+    - symlink
+    - zsh
+    - zplug
     - anyenv
     - nodebrew
+    - alias
