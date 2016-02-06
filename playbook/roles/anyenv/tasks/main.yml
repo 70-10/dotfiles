@@ -35,3 +35,9 @@
     repo: https://github.com/znz/anyenv-update.git
     dest: ~/.anyenv/plugins/anyenv-update
   when: not update_dir.stat.exists
+
+- name: set shell
+  copy:
+    src: anyenv.sh
+    dest: ~{{ user }}/.zsh.d/anyenv.sh
+    mode: "644"
