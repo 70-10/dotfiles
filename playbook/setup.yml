@@ -25,3 +25,4 @@
     - prezto
     - anyenv
     - nodebrew
+    - alias
