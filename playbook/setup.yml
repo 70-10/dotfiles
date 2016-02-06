@@ -23,7 +23,6 @@
     - symlink
     - zsh
     - zplug
-    - prezto
     - anyenv
     - nodebrew
     - alias
