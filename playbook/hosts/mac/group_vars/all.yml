@@ -57,6 +57,7 @@ cask_packages:
   - qlmarkdown
   - rdm
   - skitch
+  - slack
   - skype
   - sourcetree
   - vagrant
