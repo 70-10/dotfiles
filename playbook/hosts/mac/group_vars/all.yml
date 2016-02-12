@@ -11,6 +11,7 @@ brew_packages:
   - curl
   - direnv
   - docker
+  - docker-compose
   - docker-machine
   - gibo
   - git
