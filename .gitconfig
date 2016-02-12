@@ -1,5 +1,7 @@
 [alias]
   aa = add .
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+  ap = add -p
   ba = branch -a
   bd = branch -d
   bv = branch -vv
@@ -12,6 +14,7 @@
   co = checkout
   d = diff
   fp = fetch --prune
+  ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $2 >> .gitignore
   info = remote show origin
   l = log --stat --abbrev-commit -n 1
   la = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
