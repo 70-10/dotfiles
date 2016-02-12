@@ -52,6 +52,7 @@ cask_packages:
   - iterm2
   - java
   - kitematic
+  - libreoffice
   - onyx
   - pycharm-ce
   - qlmarkdown
