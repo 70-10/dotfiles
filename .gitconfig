@@ -1,6 +1,6 @@
 [alias]
   aa = add .
-  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t   -- \\2/' | sort
   ap = add -p
   ba = branch -a
   bd = branch -d
