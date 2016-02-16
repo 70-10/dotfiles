@@ -33,6 +33,7 @@ brew_packages:
   - z
   - zsh
   - zsh-completions
+  - https://www.soimort.org/translate-shell/translate-shell.rb
 
 cask_packages:
   - 1password
