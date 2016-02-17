@@ -79,3 +79,4 @@ golang:
     - "golang.org/x/tools/cmd/gorename"
     - "github.com/pilu/fresh"
     - "github.com/mattn/gom"
+    - "github.com/stretchr/testify"
