@@ -42,7 +42,6 @@ cask_packages:
   - appcleaner
   - atom
   - caffeine
-  - coteditor
   - dropbox
   - eclipse-jee
   - evernote
