@@ -3,12 +3,14 @@ brew_taps:
   - caskroom/cask
   - caskroom/versions
   - caskroom/fonts
+  - codekitchen/dinghy
 
 brew_packages:
   - ansible
   - awscli
   - cmake
   - curl
+  - dinghy
   - direnv
   - docker
   - docker-compose
