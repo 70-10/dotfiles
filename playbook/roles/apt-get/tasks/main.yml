@@ -1,5 +1,6 @@
 - name: install packages
-  sudo: yes
+  become: yes
+  become_method: sudo
   apt:
     name: "{{ item }}"
     state: present

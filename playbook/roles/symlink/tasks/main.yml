@@ -3,4 +3,4 @@
     src: "~/dotfiles/{{ item }}"
     dest: "~/{{ item }}"
     state: link
-  with_items: dotfiles
+  with_items: "{{ dotfiles }}"
