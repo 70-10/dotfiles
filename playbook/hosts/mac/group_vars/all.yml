@@ -4,6 +4,7 @@ brew_taps:
   - caskroom/versions
   - caskroom/fonts
   - codekitchen/dinghy
+  - caius/jo
 
 brew_packages:
   - ansible
@@ -20,6 +21,7 @@ brew_packages:
   - gradle
   - httpie
   - hub
+  - jo
   - mercurial
   - mergepbx
   - mysql
