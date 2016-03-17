@@ -14,6 +14,7 @@
   co = checkout
   d = diff
   fp = fetch --prune
+  ib = !([ ! -e .gitignore ] && touch .gitignore) | gibo $2 >> .gitignore
   ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $2 >> .gitignore
   info = remote show origin
   l = log --stat --abbrev-commit -n 1
