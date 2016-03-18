@@ -30,13 +30,13 @@ brew_packages:
   - sqlite
   - the_silver_searcher
   - tig
+  - translate-shell
   - tree
   - typesafe-activator
   - wget
   - z
   - zsh
   - zsh-completions
-  - https://www.soimort.org/translate-shell/translate-shell.rb
 
 cask_packages:
   - 1password
