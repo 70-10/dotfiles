@@ -17,6 +17,7 @@ brew_packages:
   - docker-machine
   - gibo
   - git
+  - glide
   - gradle
   - httpie
   - hub
