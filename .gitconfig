@@ -4,6 +4,7 @@
   ap = add -p
   ba = branch -a
   bd = branch -d
+  bD = branch -D
   bv = branch -vv
   cf = config
   cfg = config --global
