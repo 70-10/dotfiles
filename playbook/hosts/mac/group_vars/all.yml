@@ -26,7 +26,6 @@ brew_packages:
   - mergepbx
   - mysql
   - nkf
-  - nodebrew
   - peco
   - sqlite
   - the_silver_searcher
