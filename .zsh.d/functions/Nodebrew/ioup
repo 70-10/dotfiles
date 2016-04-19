@@ -1,3 +1,5 @@
 #!/bin/zsh
 
+nodebrew install-binary latest;
+nodebrew use latest;
 npm i babel babel-cli gulp-cli eslint babel-eslint eslint-plugin-react npm-check coffee-script bower typescript typings fixpack -g;
