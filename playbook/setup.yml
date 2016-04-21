@@ -6,6 +6,7 @@
     - vars/main.yml
     - vars/secret.yml
   roles:
+    - zplug
     - symlink
     - homebrew
     - golang
