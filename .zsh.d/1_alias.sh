@@ -1,5 +1,6 @@
 alias cdu='cd-gitroot'
 alias history='history -i'
+alias ka='k -a'
 alias lap='la | peco'
 alias resource='source ~/.zshrc'
 
