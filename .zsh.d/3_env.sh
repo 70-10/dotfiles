@@ -5,4 +5,5 @@ if [ -d $HOME/.anyenv ] ; then
 fi
 
 # direnv
+export EDITOR=vim
 eval "$(direnv hook zsh)"
