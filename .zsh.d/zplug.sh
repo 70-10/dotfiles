@@ -6,6 +6,7 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "themes/minimal", from:oh-my-zsh
 zplug "supercrabtree/k"
+zplug "mrowa44/emojify", as:command
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
