@@ -24,6 +24,7 @@
   nffmerge = merge --no-ff
   ps = push
   ra = remote add
+  rename = branch -M
   rv = remote -v
   sb = status --branch --short
   ss = status -s
