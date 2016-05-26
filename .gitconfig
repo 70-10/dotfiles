@@ -5,6 +5,7 @@
   ba = branch -a
   bd = branch -d
   bD = branch -D
+  branches = branch -a
   bv = branch -vv
   cf = config
   cfg = config --global
@@ -14,6 +15,7 @@
   cmm = commit -m
   co = checkout
   d = diff
+  discard = checkout --
   fp = fetch --prune
   ib = !([ ! -e .gitignore ] && touch .gitignore) | gibo $2 >> .gitignore
   ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $2 >> .gitignore
@@ -24,12 +26,17 @@
   nffmerge = merge --no-ff
   ps = push
   ra = remote add
+  remotes = remote -v
   rename = branch -M
   rv = remote -v
   sb = status --branch --short
   ss = status -s
   st = status
+  stashes = stash list
+  tags = tag
   tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
+  uncommit = reset --mixed HEAD~
+  unstage = reset -q HEAD --
 [color]
   branch = auto
   diff = auto
