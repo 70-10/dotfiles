@@ -49,3 +49,9 @@
 	driver = mergepbx %O %A %B
 [push]
   default = simple
+[diff]
+	compactionHeuristic = true
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
