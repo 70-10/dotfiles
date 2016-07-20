@@ -8,6 +8,7 @@ brew_taps:
 brew_packages:
   - ansible
   - awscli
+  - aws-shell
   - cmake
   - curl
   - dinghy
