@@ -1,6 +1,6 @@
 source ~/.zplug/zplug
 
-zplug "mollifier/cd-gitroot"
+zplug "mollifier/cd-gitroot", as:command
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
