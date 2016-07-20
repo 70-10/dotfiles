@@ -8,10 +8,6 @@ alias resource='source ~/.zshrc'
 alias trje='trans ja:en'
 alias trej='trans en:ja'
 
-alias ll='ls -lF'
-alias la='ls -al'
-alias l='ls -CF'
-
 # Go
 alias goget='go get'
 alias gorn='go run'

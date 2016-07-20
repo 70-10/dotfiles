@@ -1,5 +1,6 @@
 source ~/.zplug/zplug
 
+zplug "70-10/zsh-alias"
 zplug "mollifier/cd-gitroot", as:command
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
