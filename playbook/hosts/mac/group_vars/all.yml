@@ -81,7 +81,6 @@ golang:
     - "github.com/golang/lint/golint"
     - "github.com/nsf/gocode"
     - "github.com/rogpeppe/godef"
-    - "github.com/lukehoban/go-find-references"
     - "github.com/lukehoban/go-outline"
     - "github.com/sqs/goreturns"
     - "github.com/tpng/gopkgs"
