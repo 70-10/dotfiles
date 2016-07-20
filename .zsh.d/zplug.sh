@@ -1,4 +1,4 @@
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 
 zplug "70-10/zsh-alias"
 zplug "mollifier/cd-gitroot", as:command
