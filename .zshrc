@@ -6,8 +6,5 @@ if [ -d "${HOME}/.zsh.d" ]; then
   done
 fi
 
-### zsh-completions ###
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 ### plugins ###
 fpath=($HOME/.zsh.d/functions/*(N-/) $fpath)
