@@ -8,6 +8,7 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "themes/minimal", from:oh-my-zsh
 zplug "supercrabtree/k"
 zplug "mrowa44/emojify", as:command
+zplug "b4b4r07/http_code", as:command, use:bin
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
