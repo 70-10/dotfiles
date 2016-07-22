@@ -91,3 +91,5 @@ golang:
     - "github.com/pilu/fresh"
     - "github.com/mattn/gom"
     - "github.com/stretchr/testify"
+    - "github.com/apex/apex/cmd/apex"
+    - "github.com/apex/apex-shell"
