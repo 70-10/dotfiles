@@ -1,6 +1,5 @@
 .atom/*
 .golang/*
-!.golang/bin
 
 !.gitkeep
 
