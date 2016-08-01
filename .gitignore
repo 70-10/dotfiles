@@ -3,5 +3,8 @@
 
 !.gitkeep
 
+# Ansible
+*.retry
+
 ### Ansible Vault ###
 .vault_pass
