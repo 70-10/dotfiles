@@ -57,6 +57,7 @@ cask_packages:
   - java
   - kitematic
   - libreoffice
+  - marp
   - onyx
   - pycharm-ce
   - qlmarkdown
