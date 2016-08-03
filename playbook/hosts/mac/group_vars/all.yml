@@ -19,6 +19,7 @@ brew_packages:
   - httpie
   - hub
   - jo
+  - mas
   - mercurial
   - mergepbx
   - mysql
