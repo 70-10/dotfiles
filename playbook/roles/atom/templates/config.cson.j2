@@ -10,6 +10,7 @@
   "autocomplete-plus":
     confirmCompletion: "enter"
   core:
+    packagesWithKeymapsDisabled: []
     disabledPackages: []
     themes: [
       "atom-material-ui"
@@ -33,6 +34,8 @@
     softWrap: true
     softWrapAtPreferredLineLength: true
   "ever-notedown": {}
+  "go-config":
+    gopath: "{{ GOPATH.stdout }}"
   "go-plus": {}
   "git-projects":
     rootPath: "{{ HOME_PATH.stdout }}/develop"
@@ -49,10 +52,15 @@
     useGitHubStyle: true
   minimap:
     plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
   tabs:
     showIcons: true
     usePreviewTabs: true
+  "tree-view":
+    hideVcsIgnoredFiles: false
   wakatime:
     apikey: "{{ wakatime.apikey }}"
   welcome:

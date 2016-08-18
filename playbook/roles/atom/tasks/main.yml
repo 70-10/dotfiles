@@ -2,6 +2,10 @@
   command: echo $HOME
   register: HOME_PATH
 
+- name: register GOPATH
+  command: echo $GOPATH
+  register: GOPATH
+
 - name: config.cson
   template:
     src: "{{ item }}.j2"
