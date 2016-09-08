@@ -28,6 +28,7 @@
   ra = remote add
   remotes = remote -v
   rename = branch -M
+  rb = reset --soft HEAD^
   rv = remote -v
   sb = status --branch --short
   ss = status -s
