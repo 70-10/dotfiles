@@ -82,9 +82,13 @@ golang:
     - github.com/alecthomas/gometalinter
     - github.com/apex/apex/cmd/apex
     - github.com/apex/apex-shell
+    - github.com/golang/lint/golint
+    - github.com/motemen/gore
     - github.com/nsf/gocode
     - github.com/pilu/fresh
     - github.com/rogpeppe/godef
+    - golang.org/x/tools/cmd/godoc
     - golang.org/x/tools/cmd/goimports
     - golang.org/x/tools/cmd/gorename
+    - golang.org/x/tools/cmd/guru
     - golang.org/x/tools/cmd/oracle
