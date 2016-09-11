@@ -13,4 +13,3 @@ dotfiles:
   - ".eslintrc"
   - ".atom"
   - ".npmrc"
-  - ".golang"

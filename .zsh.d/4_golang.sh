@@ -1,5 +1,2 @@
-THIRD_PARTY=$HOME/.golang/
-PRACTICE_PROJECT=$HOME/develop/practice/golang
-WORK_PROJECT=$HOME/develop/workspace/golang
-export GOPATH=$THIRD_PARTY:$WORK_PROJECT:$PRACTICE_PROJECT
-export PATH=$THIRD_PARTY/bin:$PATH
+export GOPATH=$HOME/dev
+export PATH=$GOPATH/bin:$PATH

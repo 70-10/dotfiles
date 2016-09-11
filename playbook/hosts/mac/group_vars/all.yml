@@ -12,6 +12,7 @@ brew_packages:
   - cmake
   - curl
   - direnv
+  - ghq
   - gibo
   - git
   - glide
