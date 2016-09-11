@@ -1,6 +1,6 @@
-local src=$(ghq list --full-path | peco --query "$LBUFFER")
-if [ -n "$src" ]; then
-  BUFFER="cd $src"
-  zle accept-line
+local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
 fi
-zle -R -c
+zle clear-screen
