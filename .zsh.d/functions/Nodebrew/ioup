@@ -3,9 +3,11 @@
 nodebrew install-binary latest;
 nodebrew use latest;
 npm i -g \
-  eslint \
   babel-eslint \
-  70-10/eslint-config-default \
+  eslint \
   eslint-plugin-react \
-  npm-check \
-  fixpack;
+  70-10/eslint-config-default \
+  fast-cli \
+  fixpack \
+  ngrok \
+  npm-check;
