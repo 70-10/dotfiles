@@ -28,7 +28,9 @@
   ra = remote add
   remotes = remote -v
   rename = branch -M
+  revision = rev-parse HEAD
   rb = reset --soft HEAD^
+  rr = !git rev-parse $(git log --oneline -n 1 . | awk '{{print $1}}')
   rv = remote -v
   sb = status --branch --short
   ss = status -s
