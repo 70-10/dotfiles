@@ -13,3 +13,4 @@ dotfiles:
   - ".eslintrc"
   - ".atom"
   - ".npmrc"
+  - ".tmux.conf"
