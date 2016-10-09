@@ -40,6 +40,7 @@
   tree = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
   uncommit = reset --mixed HEAD~
   unstage = reset -q HEAD --
+  undo = "!f() { \\\n    git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
 [color]
   branch = auto
   diff = auto
