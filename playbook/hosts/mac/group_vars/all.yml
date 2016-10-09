@@ -19,6 +19,7 @@ brew_packages:
   - httpie
   - hub
   - jo
+  - jq
   - mas
   - mercurial
   - mergepbx
@@ -26,6 +27,7 @@ brew_packages:
   - nkf
   - nodebrew
   - peco
+  - remarshal
   - sqlite
   - the_silver_searcher
   - tig
@@ -85,6 +87,7 @@ golang:
     - github.com/apex/apex-shell
     - github.com/golang/lint/golint
     - github.com/Masterminds/glide
+    - github.com/mattn/qq/cmd/qq
     - github.com/motemen/gore
     - github.com/nsf/gocode
     - github.com/pilu/fresh
