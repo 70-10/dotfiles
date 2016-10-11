@@ -38,7 +38,7 @@
     gopath: "{{ GOPATH.stdout }}"
   "go-plus": {}
   "git-projects":
-    rootPath: "{{ HOME_PATH.stdout }}/develop"
+    rootPath: "{{ HOME_PATH.stdout }}/dev"
   linter:
     ignoredLinterErrors: [
       "ruby"
@@ -59,10 +59,13 @@
   tabs:
     showIcons: true
     usePreviewTabs: true
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
   "tree-view":
     hideVcsIgnoredFiles: false
   wakatime:
-    apikey: "{{ wakatime.apikey }}"
+    apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
     showOnStartup: false
   whitespace:

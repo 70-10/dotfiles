@@ -4,7 +4,6 @@
   tags: mac
   vars_files:
     - vars/main.yml
-    - vars/secret.yml
   roles:
     - zplug
     - symlink
