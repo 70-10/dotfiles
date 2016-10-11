@@ -51,7 +51,7 @@ cask_packages:
   - dropbox
   - eclipse-jee
   - evernote
-  - firefox-ja
+  - firefox
   - google-chrome
   - google-drive
   - google-japanese-ime
