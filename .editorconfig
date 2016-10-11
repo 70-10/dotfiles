@@ -20,3 +20,5 @@ indent_size = 4
 [*.m]
 indent_size = 4
 
+[Makefile]
+indent_style = tab
