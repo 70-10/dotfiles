@@ -1,7 +1,6 @@
 dotfiles:
   - ".zlogin"
   - ".zlogout"
-  - ".zpreztorc"
   - ".zprofile"
   - ".zshenv"
   - ".zsh.d"
