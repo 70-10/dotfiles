@@ -9,5 +9,8 @@ npm i -g \
   70-10/eslint-config-default \
   fast-cli \
   fixpack \
+  flow-bin \
   ngrok \
-  npm-check;
+  npm-check \
+  serverless \
+  yarn;
