@@ -21,6 +21,8 @@ setopt AUTO_LIST
 setopt AUTO_PARAM_KEYS
 setopt AUTO_PARAM_SLASH
 setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_NO_STORE
 
 ### plugins ###
 fpath=($HOME/.zsh.d/functions/*(N-/) $fpath)
