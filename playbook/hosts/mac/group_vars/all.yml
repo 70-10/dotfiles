@@ -4,6 +4,7 @@ brew_taps:
   - caskroom/versions
   - caskroom/fonts
   - codekitchen/dinghy
+  - simeji/jid
 
 brew_packages:
   - ansible
@@ -18,6 +19,7 @@ brew_packages:
   - gradle
   - httpie
   - hub
+  - jid
   - jo
   - jq
   - mas
@@ -83,8 +85,6 @@ font_packages:
 golang:
   packages:
     - github.com/alecthomas/gometalinter
-    - github.com/apex/apex/cmd/apex
-    - github.com/apex/apex-shell
     - github.com/golang/lint/golint
     - github.com/Masterminds/glide
     - github.com/mattn/qq/cmd/qq
