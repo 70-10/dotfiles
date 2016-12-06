@@ -26,3 +26,5 @@ setopt HIST_NO_STORE
 
 ### plugins ###
 fpath=($HOME/.zsh.d/functions/*(N-/) $fpath)
+
+source /usr/local/bin/aws_zsh_completer.sh
