@@ -4,7 +4,6 @@ brew_taps:
   - caskroom/versions
   - caskroom/fonts
   - codekitchen/dinghy
-  - simeji/jid
 
 brew_packages:
   - ansible
