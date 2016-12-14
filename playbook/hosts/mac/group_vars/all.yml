@@ -38,6 +38,7 @@ brew_packages:
   - typesafe-activator
   - wget
   - z
+  - zplug
   - zsh
   - zsh-completions
 

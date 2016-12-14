@@ -1,4 +1,5 @@
-source ~/.zplug/init.zsh
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 zplug "70-10/zsh-alias"
 zplug "70-10/docker-alias"
