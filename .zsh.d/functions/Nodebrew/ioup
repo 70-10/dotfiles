@@ -4,6 +4,7 @@ nodebrew install-binary latest;
 nodebrew use latest;
 npm i -g \
   babel-eslint \
+  emoji-cli \
   eslint \
   eslint-plugin-react \
   70-10/eslint-config-default \
