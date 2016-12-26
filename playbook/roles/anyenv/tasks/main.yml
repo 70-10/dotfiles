@@ -35,3 +35,14 @@
     repo: https://github.com/znz/anyenv-update.git
     dest: ~/.anyenv/plugins/anyenv-update
   when: not update_dir.stat.exists
+
+- stat:
+    path: ~/.anyenv/plugins/anyenv-git
+  register: git_dir
+
+- name: git clone anyenv-git
+  git:
+    clone: yes
+    repo: https://github.com/znz/anyenv-git.git
+    dest: ~/.anyenv/plugins/anyenv-git
+  when: not git_dir.stat.exists
