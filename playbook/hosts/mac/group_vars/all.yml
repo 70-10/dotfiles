@@ -37,6 +37,7 @@ brew_packages:
   - tree
   - typesafe-activator
   - wget
+  - yarn
   - z
   - zplug
   - zsh

@@ -14,5 +14,4 @@ npm i -g \
   ngrok \
   npm-check \
   serverless \
-  yarn \
   vtop;
