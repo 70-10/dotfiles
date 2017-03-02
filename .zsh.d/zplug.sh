@@ -13,6 +13,8 @@ zplug "supercrabtree/k"
 zplug "b4b4r07/http_code"
 zplug "paulirish/git-open", as:command
 zplug "paulirish/git-recent", as:command
+zplug "jhawthorn/fzy", as:command, hook-build:'make'
+zplug "b4b4r07/git-br", as:command, use:'git-br'
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
