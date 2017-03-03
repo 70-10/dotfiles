@@ -13,3 +13,4 @@ dotfiles:
   - ".atom"
   - ".npmrc"
   - ".tmux.conf"
+  - ".vimrc"

@@ -36,6 +36,7 @@ brew_packages:
   - translate-shell
   - tree
   - typesafe-activator
+  - vim
   - wget
   - yarn
   - z
