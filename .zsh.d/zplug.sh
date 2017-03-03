@@ -16,6 +16,8 @@ zplug "paulirish/git-recent", as:command
 zplug "jhawthorn/fzy", as:command, hook-build:'make'
 zplug "b4b4r07/git-br", as:command, use:'git-br'
 
+zplug "gchaincl/httplab", as:command, from:gh-r
+zplug "asciimoo/wuzz", as:command, from:gh-r
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
