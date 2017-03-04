@@ -29,6 +29,6 @@ packages=(
 
 for pkg in ${packages[@]}
 do
-  info "===> Install $pkg"
-  go get -u -v $pkg
+  echo $pkg
+  go get -u $pkg
 done
