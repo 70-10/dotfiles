@@ -31,7 +31,7 @@ info "===> Golang Install Packages"
 
 info "===> Link dotfiles"
 
-DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git/$" | grep -v ".gitignore$")
+DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git$" | grep -v ".gitignore$")
 
 for dotfile in ${DOTFILE_PATH[@]}
 do
