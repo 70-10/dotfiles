@@ -24,10 +24,11 @@ error() {
 info "===> Install Homebrew Packages"
 ./homebrew/install.sh
 
+info "===> Install Mac App Store"
+./mas/install.sh
+
 info "===> Golang Install Packages"
 ./golang/get.sh
-
-
 
 info "===> Link dotfiles"
 

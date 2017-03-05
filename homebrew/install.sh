@@ -68,7 +68,6 @@ info "===> Install packages"
 brew install ${packages[@]} && brew cleanup
 
 cask_packages=(
-  1password
   alfred
   android-studio
   appcleaner
