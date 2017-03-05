@@ -9,3 +9,5 @@ alias trej='trans en:ja'
 alias ssh-configs='cat ~/.ssh/config| grep "Host " | sed -e "s/Host //g"'
 
 alias g='git'
+
+alias cl='richpager -s monokai'
