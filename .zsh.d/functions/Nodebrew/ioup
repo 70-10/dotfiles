@@ -10,6 +10,7 @@ npm i -g \
   70-10/eslint-config-default \
   fast-cli \
   fixpack \
+  fkill-cli \
   flow-bin \
   ngrok \
   npm-check \
