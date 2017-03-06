@@ -16,6 +16,7 @@ packages=(
   github.com/alecthomas/gometalinter
   github.com/golang/lint/golint
   github.com/Masterminds/glide
+  github.com/mattn/memo
   github.com/mattn/qq/cmd/qq
   github.com/motemen/gore
   github.com/nsf/gocode
