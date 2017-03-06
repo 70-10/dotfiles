@@ -27,8 +27,14 @@ info "===> Install Homebrew Packages"
 info "===> Install Mac App Store"
 ./mas/install.sh
 
+info "===> Install anyenv"
+./anyenv/install.sh
+
 info "===> Golang Install Packages"
 ./golang/get.sh
+
+info "==> Python install packages"
+./python/pip.sh
 
 info "===> Link dotfiles"
 

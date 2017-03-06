@@ -1,5 +1,0 @@
-[mac]
-localhost
-
-[mac:vars]
-ansible_connection=local

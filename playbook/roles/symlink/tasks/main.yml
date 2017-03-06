@@ -1,6 +1,0 @@
-- name: create symlink
-  file:
-    src: "~/dotfiles/{{ item }}"
-    dest: "~/{{ item }}"
-    state: link
-  with_items: "{{ dotfiles }}"
