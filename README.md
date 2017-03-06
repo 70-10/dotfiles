@@ -6,7 +6,7 @@ dotfiles
 ### Setup for Mac
 
 ```
-$ make setup
+$ ./setup.sh
 ```
 
 ### Setup for Ubuntu
