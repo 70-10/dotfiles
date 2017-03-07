@@ -38,7 +38,7 @@ info "==> Python install packages"
 
 info "===> Link dotfiles"
 
-DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git$" | grep -v ".gitignore$")
+DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git$" | grep -v ".gitignore$" | grep -v ".envrc")
 
 for dotfile in ${DOTFILE_PATH[@]}
 do
