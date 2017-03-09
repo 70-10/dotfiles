@@ -15,4 +15,5 @@ npm i -g \
   ngrok \
   npm-check \
   serverless \
+  textlint \
   vtop;
