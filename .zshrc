@@ -8,7 +8,6 @@ fi
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu select=1
-autoload -U compinit && compinit
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -23,8 +22,3 @@ setopt AUTO_PARAM_SLASH
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_NO_STORE
-
-### plugins ###
-fpath=($HOME/.zsh.d/functions/*(N-/) $fpath)
-
-source /usr/local/bin/aws_zsh_completer.sh
