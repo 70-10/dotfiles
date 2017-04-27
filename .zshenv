@@ -9,4 +9,5 @@ fpath=( \
   $fpath \
   )
 
+autoload -Uz colors && colors
 autoload -Uz compinit && compinit -u
