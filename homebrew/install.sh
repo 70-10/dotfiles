@@ -45,7 +45,6 @@ packages=(
   mergepbx
   mysql
   nkf
-  nodebrew
   peco
   remarshal
   sqlite

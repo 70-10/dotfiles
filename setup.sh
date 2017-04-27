@@ -30,6 +30,9 @@ info "===> Install Mac App Store"
 info "===> Install anyenv"
 ./anyenv/install.sh
 
+info "==> Install nodebrew and node.js"
+./nodebrew/install.sh
+
 info "===> Golang Install Packages"
 ./golang/get.sh
 
