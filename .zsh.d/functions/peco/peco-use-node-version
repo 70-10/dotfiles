@@ -1,0 +1,11 @@
+which peco nodebrew > /dev/null
+if [ $? -ne 0 ]; then
+  echo "Please install nodebrew and peco"
+  return 1
+fi
+
+local selected_version=$(nodebrew ls | grep "^v" | peco --query "$LBUFFER")
+if [ -n "selected_version" ]; then
+    BUFFER="nodebrew use ${selected_version}"
+    zle accept-line
+fi

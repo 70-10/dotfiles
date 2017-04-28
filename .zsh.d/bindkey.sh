@@ -1,8 +1,15 @@
-autoload -Uz peco-src peco-history peco-aws-credentials peco-z-search
+autoload -Uz \
+peco-src \
+peco-history \
+peco-aws-credentials \
+peco-z-search \
+peco-use-node-version
+
 zle -N peco-src
 zle -N peco-history
 zle -N peco-aws-credentials
 zle -N peco-z-search
+zle -N peco-use-node-version
 
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
@@ -11,3 +18,4 @@ bindkey '^]' peco-src
 bindkey '^r' peco-history
 bindkey '^w' peco-aws-credentials
 bindkey '^f' peco-z-search
+bindkey '^n' peco-use-node-version
