@@ -22,6 +22,7 @@
   info = remote show origin
   l = log --stat --abbrev-commit -n 1
   la = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
+  lf = !git-foresta --style=2 | less -RSX
   ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
   nffmerge = merge --no-ff
   ps = push

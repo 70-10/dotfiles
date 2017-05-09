@@ -20,6 +20,8 @@ zplug "b4b4r07/richpager", as:command, use:"richpager"
 zplug "gchaincl/httplab", as:command, from:gh-r
 zplug "asciimoo/wuzz", as:command, from:gh-r
 
+zplug "takaaki-kasai/git-foresta", as:command
+
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
