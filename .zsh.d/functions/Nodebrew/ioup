@@ -14,4 +14,5 @@ npm i -g \
   prettier \
   serverless \
   textlint \
-  vtop;
+  vtop \
+  70-10/world-time;
