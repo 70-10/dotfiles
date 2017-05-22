@@ -3,6 +3,7 @@
 nodebrew install-binary latest;
 nodebrew use latest;
 npm i -g \
+  clipboard-cli \
   emoji-cli \
   eslint \
   fast-cli \
