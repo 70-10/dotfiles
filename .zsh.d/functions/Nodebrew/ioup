@@ -6,6 +6,7 @@ npm i -g \
   emoji-cli \
   eslint \
   fast-cli \
+  firebase-status \
   fixpack \
   fkill-cli \
   flow-bin \
