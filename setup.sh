@@ -39,6 +39,12 @@ info "===> Golang Install Packages"
 info "==> Python install packages"
 ./python/pip.sh
 
+if ! type circleci > /dev/null 2>&1; then
+  info "==> Install CircleCI CLI"
+  curl -o /usr/local/bin/circleci https://circle-downloads.s3.amazonaws.com/releases/build_agent_wrapper/circleci && chmod +x /usr/local/bin/circleci
+  /usr/local/bin/circleci update
+fi
+
 info "===> Link dotfiles"
 
 DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git$" | grep -v ".gitignore$" | grep -v ".envrc")
