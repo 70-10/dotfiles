@@ -18,5 +18,6 @@ npm i -g \
   prettier \
   serverless \
   textlint \
+  trash-cli \
   vtop \
   70-10/world-time;
