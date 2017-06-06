@@ -5,6 +5,7 @@ nodebrew use latest;
 npm i -g \
   clipboard-cli \
   emoji-cli \
+  empty-trash-cli \
   eslint \
   fast-cli \
   firebase-status \
