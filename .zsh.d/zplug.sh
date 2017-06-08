@@ -21,6 +21,7 @@ zplug "gchaincl/httplab", as:command, from:gh-r
 zplug "asciimoo/wuzz", as:command, from:gh-r
 
 zplug "takaaki-kasai/git-foresta", as:command
+zplug "lukechilds/zsh-better-npm-completion", defer:1
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
