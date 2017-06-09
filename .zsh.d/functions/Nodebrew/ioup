@@ -2,6 +2,8 @@
 
 nodebrew install-binary latest;
 nodebrew use latest;
+npm i -g npm@latest
+npm cache verify
 npm i -g \
   clipboard-cli \
   emoji-cli \
