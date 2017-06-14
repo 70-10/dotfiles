@@ -22,6 +22,7 @@ zplug "asciimoo/wuzz", as:command, from:gh-r
 
 zplug "takaaki-kasai/git-foresta", as:command
 zplug "lukechilds/zsh-better-npm-completion", defer:1
+zplug "b4b4r07/enhancd", use:init.sh
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -32,3 +33,5 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load
+
+export ENHANCD_FILTER=peco
