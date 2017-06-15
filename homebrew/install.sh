@@ -34,6 +34,7 @@ packages=(
   ghq
   gibo
   git
+  git-secrets
   gradle
   httpie
   hub
