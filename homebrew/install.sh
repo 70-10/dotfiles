@@ -38,6 +38,7 @@ packages=(
   gradle
   httpie
   hub
+  hugo
   jid
   jo
   jq
