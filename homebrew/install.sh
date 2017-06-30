@@ -107,6 +107,7 @@ cask_packages=(
 
 
 info "===> Install Cask packages"
+brew tap caskroom/fonts
 brew cask install ${cask_packages[@]} && brew cask cleanup
 
 fonts=(
