@@ -20,4 +20,4 @@ fi
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 info "===> nodebrew install latest and install npm modules"
-../.zsh.d/functions/Nodebrew/ioup
+$(PWD)/.zsh.d/functions/Nodebrew/ioup
