@@ -87,7 +87,6 @@ cask_packages=(
   iterm2
   java
   karabiner
-  kitematic
   libreoffice
   marp
   onyx
