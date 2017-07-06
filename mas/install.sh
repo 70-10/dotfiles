@@ -15,6 +15,7 @@ error() {
 packages=(
   1024640650 # CotEditor
   443987910  # 1password
+  417375580  # BetterSnapTool
 )
 
 info "===> Install app at Mac App Store"
