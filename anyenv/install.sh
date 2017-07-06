@@ -31,7 +31,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 anyenv install ${envs[@]} --skip-existing
 
-GOVERSION=1.8
+GOVERSION=1.8.2
 info "===> goenv install $GOVERSION"
 if [ -d $HOME/.anyenv/envs/goenv/versions/$GOVERSION ]; then
   info "$GOVERSION is already installed"
