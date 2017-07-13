@@ -5,6 +5,7 @@ nodebrew use latest;
 npm i -g npm@latest
 npm cache verify
 npm i -g \
+  apple-system-status \
   clipboard-cli \
   emoji-cli \
   empty-trash-cli \
