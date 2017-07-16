@@ -2,6 +2,9 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "lukehoban.Go"
+    "gluons.vscode-atom-javascript-snippet",
+    "lukehoban.Go",
+    "ms-vscode.atom-keybindings"
   ]
 }
+
