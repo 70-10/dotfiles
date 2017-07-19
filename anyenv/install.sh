@@ -29,7 +29,12 @@ envs=(
 info "===> Install envs"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
-anyenv install ${envs[@]} --skip-existing
+for env in ${envs[@]}
+do
+  info "=====> Install $env"
+  anyenv install $env --skip-existing
+done
+
 
 GOVERSION=1.8.2
 info "===> goenv install $GOVERSION"
