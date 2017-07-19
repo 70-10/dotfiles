@@ -55,3 +55,6 @@ do
   rm -f $HOME/$dotfile
   Ln -s $(pwd)/$dotfile $HOME/$dotfile
 done
+
+info "==> VSCode Install extensions"
+./vscode/install-extension.sh
