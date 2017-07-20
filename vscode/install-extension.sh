@@ -21,6 +21,7 @@ extensions=(
   gluons.vscode-atom-javascript-snippet
   lukehoban.Go
   ms-vscode.atom-keybindings
+  naumovs.color-highlight
   octref.vetur
   PeterJausovec.vscode-docker
   PKief.material-icon-theme
