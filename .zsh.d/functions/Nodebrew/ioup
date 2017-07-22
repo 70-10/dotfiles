@@ -24,4 +24,5 @@ npm i -g \
   textlint \
   trash-cli \
   vtop \
+  70-10/m \
   70-10/world-time;
