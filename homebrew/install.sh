@@ -93,6 +93,7 @@ cask_packages=(
   pycharm-ce
   qlmarkdown
   rdm
+  sequel-pro
   skitch
   slack
   skype
