@@ -15,8 +15,8 @@ error() {
 packages=(
   github.com/alecthomas/gometalinter
   github.com/b4b4r07/gist
+  github.com/golang/dep/cmd/dep
   github.com/golang/lint/golint
-  github.com/Masterminds/glide
   github.com/mattn/memo
   github.com/mattn/qq/cmd/qq
   github.com/motemen/gore
