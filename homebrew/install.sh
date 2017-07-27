@@ -79,7 +79,9 @@ cask_packages=(
   eclipse-jee
   evernote
   firefox
+  gogland
   google-chrome
+  google-chrome-canary
   google-drive
   google-japanese-ime
   gyazo
