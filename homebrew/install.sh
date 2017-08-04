@@ -29,6 +29,7 @@ packages=(
   bash
   cmake
   curl
+  dep
   direnv
   gawk
   ghq
