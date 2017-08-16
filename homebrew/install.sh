@@ -48,6 +48,7 @@ packages=(
   mergepbx
   mysql
   nkf
+  nmap
   peco
   remarshal
   sqlite
