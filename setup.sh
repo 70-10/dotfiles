@@ -47,7 +47,7 @@ fi
 
 info "===> Link dotfiles"
 
-DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".git$" | grep -v ".gitignore$" | grep -v ".envrc")
+DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
 
 for dotfile in ${DOTFILE_PATH[@]}
 do
