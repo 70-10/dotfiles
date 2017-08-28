@@ -56,5 +56,13 @@ do
   Ln -s $(pwd)/$dotfile $HOME/$dotfile
 done
 
+CONFIG_DIR=$(ls -A .config)
+for config in ${CONFIG_DIR[@]}
+do
+  echo .config/$config
+  rm -f $HOME/.config/$config
+  Ln -s $(pwd)/.config/$config $HOME/.config/$config
+done
+
 info "==> VSCode Install extensions"
 ./vscode/install-extension.sh

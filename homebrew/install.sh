@@ -47,6 +47,7 @@ packages=(
   mercurial
   mergepbx
   mysql
+  neovim
   nkf
   nmap
   peco
