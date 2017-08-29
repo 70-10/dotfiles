@@ -60,7 +60,7 @@ CONFIG_DIR=$(ls -A .config)
 for config in ${CONFIG_DIR[@]}
 do
   echo .config/$config
-  rm -f $HOME/.config/$config
+  rm -rf $HOME/.config/$config
   Ln -s $(pwd)/.config/$config $HOME/.config/$config
 done
 
