@@ -24,5 +24,4 @@ npm i -g \
   serverless \
   textlint \
   trash-cli \
-  70-10/m \
-  70-10/world-time;
+  70-10/m;
