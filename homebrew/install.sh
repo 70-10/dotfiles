@@ -81,6 +81,7 @@ cask_packages=(
   dropbox
   eclipse-jee
   evernote
+  fastlane
   firefox
   gogland
   google-chrome
