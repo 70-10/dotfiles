@@ -92,7 +92,7 @@ cask_packages=(
   intellij-idea-ce
   iterm2
   java
-  karabiner
+  karabiner-elements
   libreoffice
   marp
   onyx
