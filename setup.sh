@@ -21,6 +21,10 @@ error() {
     echo -e "\033[31m$@\033[m"
 }
 
+info "==> Defult Settings"
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
+
 info "===> Install Homebrew Packages"
 ./homebrew/install.sh
 
