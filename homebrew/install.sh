@@ -73,19 +73,16 @@ brew install ${packages[@]} && brew cleanup
 
 cask_packages=(
   alfred
-  android-studio
   appcleaner
   atom
   caffeine
   docker
   dropbox
-  eclipse-jee
   evernote
   fastlane
   firefox
   gogland
   google-chrome
-  google-chrome-canary
   google-drive
   google-japanese-ime
   gyazo
@@ -94,7 +91,6 @@ cask_packages=(
   java
   karabiner-elements
   libreoffice
-  marp
   onyx
   pycharm-ce
   qlmarkdown
