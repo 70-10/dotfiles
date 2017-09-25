@@ -13,3 +13,4 @@ alias g='git'
 alias cl='richpager -s monokai'
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias vim="nvim"

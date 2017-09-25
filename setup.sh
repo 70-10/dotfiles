@@ -49,6 +49,9 @@ if ! type circleci > /dev/null 2>&1; then
   /usr/local/bin/circleci update
 fi
 
+info "===> Neovim Setting"
+./neovim/vim-plug.sh
+
 info "===> Link dotfiles"
 
 DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
