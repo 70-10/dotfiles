@@ -17,11 +17,6 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-printf "Update recipes? [Y/n]: " && read ANS
-if [ "${ANS}" = "Y" ]; then
-    brew update
-fi
-
 packages=(
   ansible
   awscli
