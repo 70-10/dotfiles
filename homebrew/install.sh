@@ -26,6 +26,7 @@ packages=(
   curl
   dep
   direnv
+  fd
   gawk
   ghq
   gibo
