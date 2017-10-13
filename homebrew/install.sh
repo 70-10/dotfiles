@@ -74,7 +74,6 @@ cask_packages=(
   caffeine
   docker
   dropbox
-  evernote
   fastlane
   firefox
   gogland
