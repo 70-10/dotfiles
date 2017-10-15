@@ -14,7 +14,6 @@ error() {
 
 packages=(
   github.com/alecthomas/gometalinter
-  github.com/b4b4r07/gist
   github.com/golang/lint/golint
   github.com/mattn/memo
   github.com/mattn/qq/cmd/qq
