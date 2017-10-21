@@ -10,4 +10,5 @@ highlight NonText ctermbg=NONE
 
 call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai', {'do': 'cp colors/* ~/.config/nvim/colors/'}
+Plug 'fatih/vim-go'
 call plug#end()
