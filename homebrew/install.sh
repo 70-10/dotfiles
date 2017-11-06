@@ -76,7 +76,7 @@ cask_packages=(
   dropbox
   fastlane
   firefox
-  gogland
+  goland
   google-chrome
   google-drive
   google-japanese-ime
