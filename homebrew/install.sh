@@ -54,7 +54,6 @@ packages=(
   tmux
   translate-shell
   tree
-  typesafe-activator
   vim
   wget
   yarn
