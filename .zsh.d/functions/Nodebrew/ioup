@@ -23,4 +23,5 @@ npm i -g \
   serverless \
   textlint \
   trash-cli \
+  70-10/aws-billing \
   70-10/m;
