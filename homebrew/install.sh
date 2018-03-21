@@ -83,7 +83,6 @@ cask_packages=(
   iterm2
   java
   karabiner-elements
-  libreoffice
   onyx
   pycharm-ce
   qlmarkdown
