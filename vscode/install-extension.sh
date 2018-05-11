@@ -18,6 +18,7 @@ extensions=(
   dbaeumer.vscode-eslint
   EditorConfig.EditorConfig
   esbenp.prettier-vscode
+  ms-vscode.atom-keybindings
   ms-vscode.go
   PeterJausovec.vscode-docker
   PKief.material-icon-theme
