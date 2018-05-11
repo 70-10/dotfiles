@@ -13,19 +13,15 @@ error() {
 }
 
 extensions=(
+  christian-kohler.npm-intellisense
   christian-kohler.path-intellisense
   dbaeumer.vscode-eslint
   EditorConfig.EditorConfig
   esbenp.prettier-vscode
-  flowtype.flow-for-vscode
-  gluons.vscode-atom-javascript-snippet
-  lukehoban.Go
-  ms-vscode.atom-keybindings
-  naumovs.color-highlight
-  octref.vetur
+  ms-vscode.go
   PeterJausovec.vscode-docker
   PKief.material-icon-theme
-  taichi.vscode-textlint
+  robinbentley.sass-indented
   WakaTime.vscode-wakatime
 )
 
