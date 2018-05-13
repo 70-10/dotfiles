@@ -17,6 +17,7 @@ extensions=(
   christian-kohler.path-intellisense
   dbaeumer.vscode-eslint
   EditorConfig.EditorConfig
+  eg2.vscode-npm-script
   esbenp.prettier-vscode
   ms-vscode.atom-keybindings
   ms-vscode.go
