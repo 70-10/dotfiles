@@ -15,10 +15,12 @@ error() {
 extensions=(
   christian-kohler.npm-intellisense
   christian-kohler.path-intellisense
+  codezombiech.gitignore
   dbaeumer.vscode-eslint
   EditorConfig.EditorConfig
   eg2.vscode-npm-script
   esbenp.prettier-vscode
+  gluons.vscode-atom-javascript-snippet
   ms-vscode.atom-keybindings
   ms-vscode.go
   PeterJausovec.vscode-docker
