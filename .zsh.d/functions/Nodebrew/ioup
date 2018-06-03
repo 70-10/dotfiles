@@ -24,4 +24,5 @@ npm i -g \
   textlint \
   trash-cli \
   70-10/aws-billing \
-  70-10/m;
+  70-10/m \
+  70-10/nodebrew-cleanup;
