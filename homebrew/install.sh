@@ -93,6 +93,7 @@ cask_packages=(
   skype
   sourcetree
   spotify
+  typora
   vagrant
   vagrant-manager
   virtualbox
