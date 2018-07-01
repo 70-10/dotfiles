@@ -21,6 +21,7 @@ packages=(
   github.com/nsf/gocode
   github.com/pilu/fresh
   github.com/rogpeppe/godef
+  github.com/tj/node-prune
   golang.org/x/tools/cmd/godoc
   golang.org/x/tools/cmd/goimports
   golang.org/x/tools/cmd/gorename
