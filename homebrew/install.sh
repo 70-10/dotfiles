@@ -34,7 +34,6 @@ packages=(
   git-secrets
   gradle
   httpie
-  hub
   hugo
   jid
   jo
