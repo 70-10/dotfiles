@@ -11,6 +11,7 @@ npm i -g \
   eslint \
   fast-cli \
   firebase-status \
+  firebase-tools \
   fkill-cli \
   flow-bin \
   gtop \
