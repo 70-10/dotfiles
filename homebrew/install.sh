@@ -93,9 +93,6 @@ cask_packages=(
   sourcetree
   spotify
   typora
-  vagrant
-  vagrant-manager
-  virtualbox
   visual-studio-code
 )
 
