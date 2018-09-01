@@ -22,6 +22,7 @@ packages=(
   awscli
   aws-shell
   bash
+  bat
   cmake
   curl
   dep
