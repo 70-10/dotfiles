@@ -93,6 +93,7 @@ cask_packages=(
   skype
   sourcetree
   spotify
+  teamsql
   typora
   visual-studio-code
 )
