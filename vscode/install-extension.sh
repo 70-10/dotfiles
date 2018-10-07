@@ -27,6 +27,7 @@ extensions=(
   PKief.material-icon-theme
   robinbentley.sass-indented
   WakaTime.vscode-wakatime
+  wayou.vscode-todo-highlight
 )
 
 for ext in ${extensions[@]}
