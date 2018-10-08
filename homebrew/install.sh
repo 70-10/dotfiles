@@ -39,6 +39,7 @@ packages=(
   jid
   jo
   jq
+  kubernetes-cli
   mas
   mercurial
   mergepbx
