@@ -25,4 +25,5 @@ npm i -g \
   trash-cli \
   70-10/aws-billing \
   70-10/m \
-  70-10/nodebrew-cleanup;
+  70-10/nodebrew-cleanup \
+  @vue/cli;
