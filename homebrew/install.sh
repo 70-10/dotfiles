@@ -61,7 +61,6 @@ packages=(
   z
   zplug
   zsh
-  zsh-completions
 )
 
 info "===> Install packages"
