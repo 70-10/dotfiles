@@ -45,7 +45,7 @@ else
   goenv global $GOVERSION
 fi
 
-PYTHONVERSION=3.6.5
+PYTHONVERSION=3.7.1
 info "===> pyenv install $PYTHONVERSION"
 if [ -d $HOME/.anyenv/envs/pyenv/versions/$PYTHONVERSION ]; then
   info "$PYTHONVERSION is already installed"
