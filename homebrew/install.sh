@@ -64,7 +64,7 @@ packages=(
 )
 
 info "===> Install packages"
-brew install ${packages[@]} && brew cleanup
+brew install ${packages[@]}
 
 cask_packages=(
   alfred
@@ -93,7 +93,6 @@ cask_packages=(
   skype
   sourcetree
   spotify
-  teamsql
   typora
   visual-studio-code
 )
@@ -101,7 +100,7 @@ cask_packages=(
 
 info "===> Install Cask packages"
 brew tap caskroom/fonts
-brew cask install ${cask_packages[@]} && brew cask cleanup
+brew cask install ${cask_packages[@]}
 
 fonts=(
   font-camingocode
@@ -110,4 +109,7 @@ fonts=(
 )
 
 info "===> Install fonts"
-brew cask install ${fonts[@]} && brew cask cleanup
+brew cask install ${fonts[@]}
+
+info "===> Clean up"
+brew cleanup
