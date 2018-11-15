@@ -86,7 +86,6 @@ cask_packages=(
   onyx
   pycharm-ce
   qlmarkdown
-  rdm
   sequel-pro
   skitch
   slack
