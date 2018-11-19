@@ -76,7 +76,7 @@ cask_packages=(
   fastlane
   firefox
   google-chrome
-  google-drive
+  google-backup-and-sync
   google-japanese-ime
   gyazo
   intellij-idea-ce
