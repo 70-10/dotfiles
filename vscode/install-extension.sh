@@ -23,6 +23,7 @@ extensions=(
   gluons.vscode-atom-javascript-snippet
   ms-vscode.atom-keybindings
   ms-vscode.go
+  octref.vetur
   PeterJausovec.vscode-docker
   PKief.material-icon-theme
   robinbentley.sass-indented
