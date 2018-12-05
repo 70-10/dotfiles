@@ -75,6 +75,7 @@ cask_packages=(
   dropbox
   fastlane
   firefox
+  gimp
   google-chrome
   google-backup-and-sync
   google-japanese-ime
