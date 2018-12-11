@@ -4,7 +4,9 @@
   ap = add -p
   ba = branch -a
   bd = branch -d
+  bdm = !git branch --merged | grep -v '*' | xargs -I{} git branch -d {}
   bD = branch -D
+  bm = !git branch --merged | grep -v '*'
   branches = branch -a
   bv = branch -vv
   cf = config
