@@ -37,3 +37,6 @@ Temporary Items
 
 ### Atom ###
 .tern-project
+
+### VSCode ###
+.vscode
