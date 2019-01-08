@@ -91,7 +91,6 @@ cask_packages=(
   skitch
   slack
   skype
-  sourcetree
   spotify
   typora
   visual-studio-code
