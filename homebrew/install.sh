@@ -33,7 +33,6 @@ packages=(
   gibo
   git
   git-secrets
-  gradle
   httpie
   hugo
   jid
