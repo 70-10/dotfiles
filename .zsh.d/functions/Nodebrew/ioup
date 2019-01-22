@@ -21,6 +21,7 @@ npm i -g \
   planeshift \
   prettier \
   serverless \
+  sort-package-json \
   textlint \
   trash-cli \
   70-10/aws-billing \
