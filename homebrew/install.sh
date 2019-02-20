@@ -85,6 +85,7 @@ cask_packages=(
   iterm2
   java
   karabiner-elements
+  notable
   onyx
   pycharm-ce
   qlmarkdown
