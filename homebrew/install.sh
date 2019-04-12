@@ -73,7 +73,6 @@ cask_packages=(
   atom
   caffeine
   docker
-  dropbox
   fastlane
   firefox
   gimp
@@ -94,7 +93,6 @@ cask_packages=(
   slack
   skype
   spotify
-  typora
   visual-studio-code
 )
 
