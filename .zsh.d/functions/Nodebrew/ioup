@@ -14,7 +14,9 @@ npm i -g \
   firebase-status \
   firebase-tools \
   fkill-cli \
+  netlify-cli \
   ngrok \
+  now \
   np \
   npm-check \
   planeshift \
