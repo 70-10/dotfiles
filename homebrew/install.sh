@@ -67,7 +67,6 @@ info "===> Install packages"
 brew install ${packages[@]}
 
 cask_packages=(
-  1password-cli
   alfred
   appcleaner
   atom
