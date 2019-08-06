@@ -69,7 +69,6 @@ brew install ${packages[@]}
 cask_packages=(
   alfred
   appcleaner
-  atom
   caffeine
   docker
   fastlane
@@ -79,11 +78,9 @@ cask_packages=(
   google-backup-and-sync
   google-japanese-ime
   gyazo
-  intellij-idea-ce
   iterm2
   java
   karabiner-elements
-  notable
   onyx
   pycharm-ce
   qlmarkdown
