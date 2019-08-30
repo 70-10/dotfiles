@@ -78,6 +78,7 @@ cask_packages=(
   google-backup-and-sync
   google-japanese-ime
   gyazo
+  inkdrop
   iterm2
   java
   karabiner-elements
