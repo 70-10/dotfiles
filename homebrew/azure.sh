@@ -11,4 +11,4 @@ brew tap azure/functions
 brew install azure-functions-core-tools
 
 # Other
-brew cask install azure-data-studio visual-studio
+brew cask install azure-data-studio visual-studio microsoft-teams
