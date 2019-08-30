@@ -14,7 +14,7 @@ error() {
 
 packages=(
   1024640650 # CotEditor
-  443987910  # 1password
+  1333542190  # 1password
   417375580  # BetterSnapTool
 )
 
