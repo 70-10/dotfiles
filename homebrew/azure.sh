@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# azure-cli
+brew install azure-cli
+
 # .Net SDK
 brew cask install dotnet-sdk
 
