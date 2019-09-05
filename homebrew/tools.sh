@@ -19,6 +19,7 @@ fi
 
 packages=(
   jmeter
+  ossp-uuid
 )
 
 info "===> Install packages"
