@@ -24,6 +24,7 @@ packages=(
   bash
   bat
   cmake
+  colordiff
   curl
   dep
   direnv
