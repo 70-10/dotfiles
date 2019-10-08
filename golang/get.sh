@@ -36,5 +36,5 @@ export GOROOT=${GOENV_ROOT}/versions/$(goenv version)
 for pkg in ${packages[@]}
 do
   echo $pkg
-  go get -u $pkg
+  GO111MODULE=off go get -u $pkg
 done
