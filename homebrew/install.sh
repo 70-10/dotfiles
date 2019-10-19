@@ -26,6 +26,7 @@ packages=(
   cmake
   colordiff
   curl
+  deno
   dep
   direnv
   exa
