@@ -100,6 +100,7 @@ brew cask install ${cask_packages[@]}
 
 fonts=(
   font-camingocode
+  font-myricam
   font-ricty-diminished
   font-go
 )
