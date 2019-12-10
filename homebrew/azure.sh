@@ -5,6 +5,7 @@ brew install azure-cli
 
 # .Net SDK
 brew cask install dotnet-sdk
+brew tap isen-ng/dotnet-sdk-versions
 
 # Azure Functions Tools
 brew tap azure/functions
