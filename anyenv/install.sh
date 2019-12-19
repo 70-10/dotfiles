@@ -26,6 +26,10 @@ envs=(
   pyenv
 )
 
+info "===> anyenv update"
+anyenv git pull
+anyenv git gc
+
 info "===> Install envs"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
@@ -36,7 +40,7 @@ do
 done
 
 
-GOVERSION=1.13.4
+GOVERSION=1.13.5
 info "===> goenv install $GOVERSION"
 if [ -d $HOME/.anyenv/envs/goenv/versions/$GOVERSION ]; then
   info "$GOVERSION is already installed"
