@@ -13,20 +13,8 @@ error() {
 }
 
 packages=(
-  github.com/alecthomas/gometalinter
   github.com/cjbassi/gotop
-  github.com/golang/lint/golint
-  github.com/mattn/memo
-  github.com/mattn/qq/cmd/qq
-  github.com/motemen/gore
-  github.com/nsf/gocode
-  github.com/pilu/fresh
-  github.com/rogpeppe/godef
   github.com/tj/node-prune
-  golang.org/x/tools/cmd/godoc
-  golang.org/x/tools/cmd/goimports
-  golang.org/x/tools/cmd/gorename
-  golang.org/x/tools/cmd/guru
 )
 
 export GOPATH=$HOME/dev
