@@ -89,7 +89,6 @@ cask_packages=(
   sequel-pro
   skitch
   slack
-  skype
   spotify
   visual-studio-code
 )
