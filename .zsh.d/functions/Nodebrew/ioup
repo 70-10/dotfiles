@@ -5,23 +5,16 @@ nodebrew use latest;
 npm i -g npm@latest
 npm cache verify
 npm i -g \
-  aws-cdk \
   clipboard-cli \
   eslint \
   fast-cli \
-  firebase-tools \
   fkill-cli \
-  netlify-cli \
-  ngrok \
   now \
   np \
   npm-check \
   planeshift \
   prettier \
-  serverless \
   sort-package-json \
   textlint \
   trash-cli \
-  70-10/aws-billing \
-  70-10/nodebrew-cleanup \
-  @vue/cli;
+  70-10/nodebrew-cleanup;
