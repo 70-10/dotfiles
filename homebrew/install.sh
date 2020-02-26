@@ -49,6 +49,7 @@ packages=(
   neovim
   nkf
   nmap
+  ossp-uuid
   peco
   remarshal
   sqlite
