@@ -74,7 +74,6 @@ cask_packages=(
   appcleaner
   caffeine
   docker
-  fastlane
   firefox
   gimp
   google-chrome
