@@ -87,7 +87,6 @@ cask_packages=(
   onyx
   qlmarkdown
   sequel-pro
-  skitch
   slack
   spotify
   visual-studio-code
