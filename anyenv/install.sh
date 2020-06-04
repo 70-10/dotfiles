@@ -40,7 +40,7 @@ do
 done
 
 
-GOVERSION=1.14.0
+GOVERSION=1.14.3
 info "===> goenv install $GOVERSION"
 if [ -d $HOME/.anyenv/envs/goenv/versions/$GOVERSION ]; then
   info "$GOVERSION is already installed"
