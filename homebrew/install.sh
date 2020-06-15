@@ -31,6 +31,7 @@ packages=(
   gibo
   git
   git-secrets
+  go
   httpie
   jid
   jo

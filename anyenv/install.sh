@@ -21,7 +21,6 @@ if test ! $(which anyenv); then
 fi
 
 envs=(
-  goenv
   rbenv
   pyenv
 )
@@ -38,16 +37,6 @@ do
   info "=====> Install $env"
   anyenv install $env --skip-existing
 done
-
-
-GOVERSION=1.14.3
-info "===> goenv install $GOVERSION"
-if [ -d $HOME/.anyenv/envs/goenv/versions/$GOVERSION ]; then
-  info "$GOVERSION is already installed"
-else
-  goenv install $GOVERSION
-  goenv global $GOVERSION
-fi
 
 PYTHONVERSION=3.7.1
 info "===> pyenv install $PYTHONVERSION"
