@@ -18,16 +18,11 @@ if test ! $(which brew); then
 fi
 
 packages=(
-  ansible
-  awscli
-  aws-shell
-  bash
   bat
   cmake
   colordiff
   curl
   deno
-  dep
   direnv
   exa
   fd
@@ -37,7 +32,6 @@ packages=(
   git
   git-secrets
   httpie
-  hugo
   jid
   jo
   jq
