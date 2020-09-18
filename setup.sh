@@ -26,10 +26,9 @@ defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 1
 
 info "===> Install Homebrew Packages"
+rm -f $HOME/.Brewfile
+Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 ./homebrew/install.sh
-
-info "===> Install Mac App Store"
-./mas/install.sh
 
 info "===> Install anyenv"
 ./anyenv/install.sh
