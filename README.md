@@ -3,6 +3,5 @@
 ## Usage
 
 ```
-$ ./setup.sh
+$ make setup
 ```
-
