@@ -60,6 +60,3 @@ do
   rm -rf $HOME/.config/$config
   Ln -s $(pwd)/.config/$config $HOME/.config/$config
 done
-
-info "==> VSCode Install extensions"
-./vscode/install-extension.sh
