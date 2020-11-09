@@ -38,7 +38,7 @@ do
   anyenv install $env --skip-existing
 done
 
-PYTHONVERSION=3.8.2
+PYTHONVERSION=3.9.0
 info "===> pyenv install $PYTHONVERSION"
 if [ -d $HOME/.anyenv/envs/pyenv/versions/$PYTHONVERSION ]; then
   info "$PYTHONVERSION is already installed"
