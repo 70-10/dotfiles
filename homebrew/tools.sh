@@ -30,7 +30,7 @@ cask_packages=(
 )
 
 info "===> Install Cask packages"
-brew cask install ${cask_packages[@]}
+brew install --cask ${cask_packages[@]}
 
 info "===> Clean up"
 brew cleanup
