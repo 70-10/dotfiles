@@ -8,6 +8,7 @@ npm i -g \
   eslint \
   fkill-cli \
   np \
+  npm \
   npm-check \
   prettier \
   sort-package-json \
