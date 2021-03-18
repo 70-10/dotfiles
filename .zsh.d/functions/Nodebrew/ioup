@@ -1,15 +1,12 @@
 #!/bin/zsh
 
-nodebrew install-binary latest;
-nodebrew use latest;
-npm i -g npm@latest
+nodebrew install-binary stable;
+nodebrew use stable;
 npm cache verify
 npm i -g \
   clipboard-cli \
   eslint \
-  fast-cli \
   fkill-cli \
-  now \
   np \
   npm-check \
   prettier \
