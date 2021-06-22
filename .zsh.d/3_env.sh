@@ -4,6 +4,10 @@ if [ -d $HOME/.anyenv ] ; then
     eval "$(anyenv init -)"
 fi
 
+# pyenv
+eval "$(pyenv init --path)"
+
 # direnv
 export EDITOR=vim
 eval "$(direnv hook zsh)"
+
