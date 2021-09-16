@@ -33,8 +33,8 @@ Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 info "===> Install anyenv"
 ./anyenv/install.sh
 
-info "==> Install nodebrew and node.js"
-./nodebrew/install.sh
+info "==> Install node.js"
+./volta/install.sh
 
 info "===> Golang Install Packages"
 ./golang/get.sh
