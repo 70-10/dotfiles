@@ -1,9 +1,6 @@
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "70-10/zsh-alias"
-zplug "70-10/docker-alias"
-zplug "70-10/node-alias"
 zplug "mollifier/cd-gitroot"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:1
