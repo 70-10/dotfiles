@@ -6,6 +6,7 @@ tap "homebrew/core"
 tap "isen-ng/dotnet-sdk-versions"
 
 brew "bat"
+brew "bottom"
 brew "cmake"
 brew "colordiff"
 brew "curl"
