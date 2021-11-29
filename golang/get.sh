@@ -13,7 +13,6 @@ error() {
 }
 
 packages=(
-  github.com/cjbassi/gotop
   github.com/tj/node-prune
 )
 
