@@ -5,6 +5,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "isen-ng/dotnet-sdk-versions"
 
+brew "asdf"
 brew "bat"
 brew "bottom"
 brew "cmake"

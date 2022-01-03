@@ -30,9 +30,6 @@ rm -f $HOME/.Brewfile
 Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 ./homebrew/install.sh
 
-info "===> Install anyenv"
-./anyenv/install.sh
-
 info "==> Install node.js"
 ./volta/install.sh
 

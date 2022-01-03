@@ -1,13 +1,6 @@
-# anyenv
-if [ -d $HOME/.anyenv ] ; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-fi
-
-# pyenv
-eval "$(pyenv init --path)"
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # direnv
 export EDITOR=vim
 eval "$(direnv hook zsh)"
-
