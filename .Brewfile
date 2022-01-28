@@ -59,7 +59,7 @@ cask "iterm2"
 cask "karabiner-elements"
 cask "krisp"
 cask "qlmarkdown"
-cask "sequel-pro"
+cask "sequel-ace"
 cask "spotify"
 cask "visual-studio-code"
 
