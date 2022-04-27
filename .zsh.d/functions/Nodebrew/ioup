@@ -1,7 +1,8 @@
 #!/bin/zsh
 
-volta install node;
-npm cache verify
+asdf install nodejs lts;
+asdf global nodejs lts;
+npm cache verify;
 npm i -g \
   clipboard-cli \
   corepack \

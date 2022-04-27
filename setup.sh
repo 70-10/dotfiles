@@ -31,7 +31,7 @@ Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 ./homebrew/install.sh
 
 info "==> Install node.js"
-./volta/install.sh
+./asdf/nodejs.sh
 
 info "===> Golang Install Packages"
 ./golang/get.sh

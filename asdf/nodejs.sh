@@ -12,5 +12,10 @@ error() {
     echo -e "\033[31m$@\033[m"
 }
 
-info "===> node install latest and install npm modules by volta"
+if test ! $(which node); then
+    info "===> Installing nodejs at asdf"
+    asdf plugin add nodejs
+fi
+
+info "===> node install latest and install npm modules by asdf"
 $(PWD)/.zsh.d/functions/Nodebrew/ioup
