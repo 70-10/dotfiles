@@ -11,6 +11,5 @@ npm i -g \
   np \
   npm-check \
   prettier \
-  sort-package-json \
   textlint \
   trash-cli;

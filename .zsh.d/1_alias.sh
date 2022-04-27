@@ -45,6 +45,9 @@ if type trash > /dev/null 2>&1; then
   alias rm='trash'
 fi
 
+alias sort-package-json='npx -y sort-package-json@1.48'
+alias sort-package-json-ignore-scripts='npx -y sort-package-json'
+
 ### Docker
 if type docker > /dev/null 2>&1; then
   alias d='docker'
