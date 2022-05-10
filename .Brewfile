@@ -46,6 +46,7 @@ brew "z"
 brew "zplug"
 brew "zsh"
 
+cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "caffeine"
@@ -69,7 +70,6 @@ cask "font-jetbrains-mono"
 cask "font-myricam"
 cask "font-ricty-diminished"
 
-mas "1Password 7", id: 1333542190
 mas "CotEditor", id: 1024640650
 mas "Magnet", id: 441258766
 mas "MindNode", id: 1289197285
