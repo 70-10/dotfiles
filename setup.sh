@@ -35,17 +35,14 @@ info "===> Neovim Setting"
 
 info "===> Link dotfiles"
 
-DOTFILE_PATH=$(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
-
-for dotfile in ${DOTFILE_PATH[@]}
+for dotfile in $(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
 do
   echo $dotfile
   rm -f $HOME/$dotfile
   Ln -s $(pwd)/$dotfile $HOME/$dotfile
 done
 
-CONFIG_DIR=$(ls -A .config)
-for config in ${CONFIG_DIR[@]}
+for config in $(ls -A .config)
 do
   echo .config/$config
   rm -rf $HOME/.config/$config
