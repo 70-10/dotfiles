@@ -33,9 +33,6 @@ Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 info "==> Install node.js"
 ./asdf/nodejs.sh
 
-info "===> Golang Install Packages"
-./golang/get.sh
-
 info "===> Neovim Setting"
 ./neovim/vim-plug.sh
 
