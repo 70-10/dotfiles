@@ -1,4 +1,3 @@
-alias cdu='cd-gitroot'
 alias mkdirp='mkdir -p'
 alias reload='source ~/.zshrc'
 
