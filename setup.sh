@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 cat << 'EOF'
  ____   ___ _____ _____ ___ _     _____ ____
@@ -29,9 +29,6 @@ info "===> Install Homebrew Packages"
 rm -f $HOME/.Brewfile
 Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
 ./homebrew/install.sh
-
-info "==> Install node.js"
-./asdf/nodejs.sh
 
 info "===> Neovim Setting"
 ./neovim/vim-plug.sh

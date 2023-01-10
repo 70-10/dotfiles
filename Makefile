@@ -1,2 +1,5 @@
 setup:
-	./setup.sh
+	@./setup.sh
+
+nodejs:
+	@./setup_node.sh
