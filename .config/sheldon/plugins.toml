@@ -28,6 +28,9 @@ github = "zsh-users/zsh-history-substring-search"
 [plugins.git-open]
 github = "paulirish/git-open"
 
+[plugins.zsh-better-npm-completion]
+github = "lukechilds/zsh-better-npm-completion"
+
 [plugins.dotfiles-sync]
 local = "~/dev/src/github.com/70-10/dotfiles/zsh/sync"
 use = ["*.zsh"]

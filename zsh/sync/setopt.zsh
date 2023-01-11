@@ -1,5 +1,6 @@
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu select=1
+zstyle ":completion:*:commands" rehash 1
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
