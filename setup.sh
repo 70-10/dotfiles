@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 cat << 'EOF'
  ____   ___ _____ _____ ___ _     _____ ____
@@ -9,42 +9,51 @@ cat << 'EOF'
 
 EOF
 
+title() {
+    echo -e "=> \033[33m$@\033[m"
+}
+
 info() {
-    echo -e "\033[35m$@\033[m"
+    echo -e "==> \033[32m$@\033[m"
 }
 
-warn() {
-    echo -e "\033[33m$@\033[m"
-}
-
-error() {
-    echo -e "\033[31m$@\033[m"
-}
-
-info "==> Defult Settings"
+title "Defult Settings"
+info "defaults write -g InitialKeyRepeat -int 15"
 defaults write -g InitialKeyRepeat -int 15
+info "defaults write -g KeyRepeat -int 1"
 defaults write -g KeyRepeat -int 1
 
-info "===> Install Homebrew Packages"
+title "Install Homebrew Packages"
 rm -f $HOME/.Brewfile
 Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
-./homebrew/install.sh
+if test ! $(which brew); then
+    info "Installing homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
 
-info "===> Neovim Setting"
-./neovim/vim-plug.sh
+info "Install packages"
+brew bundle --global
 
-info "===> Link dotfiles"
+info "Clean up"
+brew cleanup
+
+title "Neovim Setting"
+info "Install vim-plug"
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+title "Link dotfiles"
 
 for dotfile in $(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
 do
-  echo $dotfile
+  info $dotfile
   rm -f $HOME/$dotfile
   Ln -s $(pwd)/$dotfile $HOME/$dotfile
 done
 
 for config in $(ls -A .config)
 do
-  echo .config/$config
+  info .config/$config
   rm -rf $HOME/.config/$config
   Ln -s $(pwd)/.config/$config $HOME/.config/$config
 done

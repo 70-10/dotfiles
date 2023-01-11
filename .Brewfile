@@ -41,7 +41,6 @@ brew "tig"
 brew "tree"
 brew "vim"
 brew "wget"
-brew "z"
 brew "zsh"
 
 cask "1password"

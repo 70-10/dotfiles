@@ -1,5 +1,21 @@
 shell = "zsh"
 
+apply = ["defer"]
+
+[plugins.zsh-defer]
+github = 'romkatv/zsh-defer'
+apply = ['source']
+
+
+[templates]
+defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
+
+[plugins.compinit]
+inline = 'autoload -Uz compinit && zsh-defer compinit'
+
+[plugins.colors]
+inline = 'autoload -Uz colors && zsh-defer colors'
+
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
@@ -11,3 +27,12 @@ github = "zsh-users/zsh-history-substring-search"
 
 [plugins.git-open]
 github = "paulirish/git-open"
+
+[plugins.dotfiles-sync]
+local = "~/dev/src/github.com/70-10/dotfiles/zsh/sync"
+use = ["*.zsh"]
+apply = ["source"]
+
+[plugins.dotfiles-defer]
+local = "~/dev/src/github.com/70-10/dotfiles/zsh/defer"
+use = ["*.zsh"]
