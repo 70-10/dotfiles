@@ -1,7 +1,0 @@
-# dotfiles
-
-## Usage
-
-```
-$ make setup
-```
