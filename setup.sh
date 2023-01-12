@@ -26,8 +26,10 @@ defaults write -g KeyRepeat -int 1
 title "Install Homebrew Packages"
 rm -f $HOME/.Brewfile
 Ln -s $(pwd)/.Brewfile $HOME/.Brewfile
-if test ! $(which brew); then
-    info "Installing homebrew"
+if ! (type brew > /dev/null 2>&1); then
+    info "Install xcode-select"
+    xcode-select --install
+    info "Install Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
@@ -44,13 +46,14 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 title "Link dotfiles"
 
-for dotfile in $(ls -A | grep -e "^\..*" | grep -v ".\(git\|gitignore\|envrc\|config\)$")
+for dotfile in $(ls -A | grep -e "^\..*" | egrep -v "\.git$|\.gitignore$|\.config$")
 do
   info $dotfile
   rm -f $HOME/$dotfile
   Ln -s $(pwd)/$dotfile $HOME/$dotfile
 done
 
+mkdir -p $HOME/.config
 for config in $(ls -A .config)
 do
   info .config/$config
