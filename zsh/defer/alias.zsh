@@ -31,6 +31,10 @@ else
   alias diff='diff -u'
 fi
 
+if type bat > /dev/null 2>&1; then
+  alias bat='BAT_THEME="Monokai Extended" bat -p'
+fi
+
 ### Node modules
 if type clipboard > /dev/null 2>&1; then
   alias cb='clipboard'
