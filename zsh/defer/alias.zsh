@@ -50,6 +50,7 @@ if type npx > /dev/null 2>&1; then
   alias sort-package-json-ignore-scripts='npx -y sort-package-json'
   alias serverless='npx -y serverless'
   alias sls='npx -y serverless'
+  alias serve='npx -y serve'
 fi
 
 ### Docker
@@ -63,5 +64,4 @@ if type docker > /dev/null 2>&1; then
   alias openapi-generator='docker run -it --rm -v ${PWD}:/local -w /local openapitools/openapi-generator-cli'
   alias radigo='docker run -it --rm -v ${PWD}:/output yyoshiki41/radigo:v0.11.0'
   alias kindlegen='docker run -it --rm -v ${PWD}:/kindle 7010/kindlegen'
-  alias serve-local='docker run --rm -v ${PWD}:/usr/share/nginx/html:ro -p 8080:80 nginx:alpine'
 fi
