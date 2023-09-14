@@ -59,9 +59,9 @@
 [diff]
 	compactionHeuristic = true
 [pager]
-	log = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
-	show = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
-	diff = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
+	log = $(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = $(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = $(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight | less
 [ghq]
 	root = ~/dev/src
 [secrets]
