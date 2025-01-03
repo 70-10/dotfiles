@@ -21,8 +21,8 @@ else
   alias ls='ls -G'
 fi
 
-alias ll='ls -lFh'
-alias la='ls -alFh'
+alias ll='ls -lhF'
+alias la='ls -alhF'
 alias l='ls -CF'
 
 if [[ -x `which colordiff` ]]; then
@@ -46,10 +46,9 @@ if type trash > /dev/null 2>&1; then
 fi
 
 if type npx > /dev/null 2>&1; then
+  alias cdk='npx -y -p aws-cdk cdk'
   alias sort-package-json='npx -y sort-package-json@1.48'
   alias sort-package-json-ignore-scripts='npx -y sort-package-json'
-  alias serverless='npx -y serverless'
-  alias sls='npx -y serverless'
   alias serve='npx -y serve'
 fi
 
