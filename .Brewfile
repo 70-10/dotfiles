@@ -1,10 +1,6 @@
 cask_args appdir: "/Applications"
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 
 brew "asdf"
 brew "bat"
@@ -26,7 +22,6 @@ brew "jid"
 brew "jo"
 brew "jq"
 brew "mas"
-brew "mysql"
 brew "neovim"
 brew "nmap"
 brew "ossp-uuid"
@@ -43,6 +38,7 @@ brew "zsh"
 
 cask "1password"
 cask "appcleaner"
+cask "arc"
 cask "caffeine"
 cask "docker"
 cask "firefox"
@@ -51,7 +47,7 @@ cask "google-japanese-ime"
 cask "iterm2"
 cask "karabiner-elements"
 cask "krisp"
-cask "logi-options-plus"
+cask "logi-options+"
 cask "obsidian"
 cask "qlmarkdown"
 cask "raycast"
@@ -68,4 +64,3 @@ cask "font-ricty-diminished"
 
 mas "CotEditor", id: 1024640650
 mas "Magnet", id: 441258766
-mas "MindNode", id: 1289197285
