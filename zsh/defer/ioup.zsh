@@ -1,6 +1,5 @@
 ioup() {
-  asdf install nodejs latest;
-  asdf global nodejs latest;
+  mise use --global node@lts;
   npm cache verify;
   npm i -g \
     clipboard-cli \
