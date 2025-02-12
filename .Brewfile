@@ -52,7 +52,6 @@ cask "obsidian"
 cask "qlmarkdown"
 cask "raycast"
 cask "sequel-ace"
-cask "spotify"
 cask "visual-studio-code"
 
 cask "font-camingocode"
