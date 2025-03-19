@@ -58,7 +58,6 @@ cask "font-camingocode"
 cask "font-go"
 cask "font-hackgen"
 cask "font-jetbrains-mono"
-cask "font-myricam"
 cask "font-ricty-diminished"
 
 mas "CotEditor", id: 1024640650
