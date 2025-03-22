@@ -55,10 +55,8 @@ cask "sequel-ace"
 cask "visual-studio-code"
 
 cask "font-camingocode"
-cask "font-go"
 cask "font-hackgen"
 cask "font-jetbrains-mono"
-cask "font-ricty-diminished"
 
 mas "CotEditor", id: 1024640650
 mas "Magnet", id: 441258766
