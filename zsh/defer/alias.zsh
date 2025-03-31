@@ -48,8 +48,6 @@ fi
 if type npx > /dev/null 2>&1; then
   alias cdk='npx -y -p aws-cdk cdk'
   alias fixpkg='npx -y fixpkg'
-  alias sort-package-json='npx -y sort-package-json@1.48'
-  alias sort-package-json-ignore-scripts='npx -y sort-package-json'
   alias serve='npx -y serve'
 fi
 
