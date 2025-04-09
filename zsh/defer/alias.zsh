@@ -49,6 +49,7 @@ if type npx > /dev/null 2>&1; then
   alias cdk='npx -y -p aws-cdk cdk'
   alias fixpkg='npx -y fixpkg'
   alias serve='npx -y serve'
+  alias fkill='npx -y -p fkill-cli fkill'
 fi
 
 ### Docker
