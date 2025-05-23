@@ -5,24 +5,17 @@
   ba = branch -a
   bd = branch -d
   bdm = !git branch --merged | grep -v '*' | xargs -I{} git branch -d {}
-  bD = branch -D
   bm = !git branch --merged | grep -v '*'
   branches = branch -a
   bv = branch -vv
-  cf = config
-  cfg = config --global
-  cfl = config -l
   cm = commit
   cma = commit --amend
   cmm = commit -m
   co = checkout
-  gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
   d = diff
-  discard = checkout --
   fp = fetch --prune
   ib = !([ ! -e .gitignore ] && touch .gitignore) | gibo dump $2 >> .gitignore
   ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $2 >> .gitignore
-  info = remote show origin
   l = log --stat --abbrev-commit -n 1
   la = log --graph --pretty='format:[%ad %C(yellow)%h%Creset] %s %C(green)<%an>%Creset %C(red)%d%Creset' --date=short
   ls = log --pretty='format:%C(yellow)%h%Creset %ad %s' --date=short --all
