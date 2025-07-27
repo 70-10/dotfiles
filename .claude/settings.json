@@ -3,7 +3,9 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(gh pr view:*)",
-      "Bash(gh pr diff:*)"
+      "Bash(gh pr diff:*)",
+      "Bash(gh issue list)",
+      "Bash(gh issue view:*)"
     ],
     "deny": []
   }
