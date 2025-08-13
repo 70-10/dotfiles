@@ -1,1 +1,6 @@
-theme=snazzy-custom
+theme = "snazzy-custom"
+
+font-family = "CamingoCode"
+font-feature = "-calt"
+font-feature = "-dlig"
+font-feature = "-liga"
