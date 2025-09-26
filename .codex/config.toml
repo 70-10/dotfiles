@@ -1,0 +1,14 @@
+[tools]
+web_search = true
+
+[mcp_servers.context7]
+command = "context7-mcp"
+
+[mcp_servers.sequential-thinking]
+command = "mcp-server-sequential-thinking"
+
+[mcp_servers.playwright]
+command = "mcp-server-playwright"
+
+[mcp_servers.chrome-devtools]
+command = "chrome-devtools-mcp"
