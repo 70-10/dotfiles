@@ -52,6 +52,12 @@ if type npx > /dev/null 2>&1; then
   alias fkill='npx -y -p fkill-cli fkill'
 fi
 
+if type copilot > /dev/null 2>&1; then
+  alias copilot-codex='COPILOT_MODEL=gpt-5-codex copilot'
+  alias copilot-5='COPILOT_MODEL=gpt-5 copilot'
+  alias copilot-5-mini='COPILOT_MODEL=gpt-5-mini copilot'
+fi
+
 ### Docker
 if type docker > /dev/null 2>&1; then
   alias d='docker'
