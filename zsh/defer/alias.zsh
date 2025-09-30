@@ -53,9 +53,8 @@ if type npx > /dev/null 2>&1; then
 fi
 
 if type copilot > /dev/null 2>&1; then
-  alias copilot-codex='COPILOT_MODEL=gpt-5-codex copilot'
-  alias copilot-5='COPILOT_MODEL=gpt-5 copilot'
-  alias copilot-5-mini='COPILOT_MODEL=gpt-5-mini copilot'
+  alias copilot-sonnet-4.5='COPILOT_MODEL=claude-sonnet-4.5 copilot'
+  alias copilot-gpt-5='COPILOT_MODEL=gpt-5 copilot'
 fi
 
 ### Docker
