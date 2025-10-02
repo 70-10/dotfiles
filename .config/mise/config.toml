@@ -15,7 +15,7 @@ pnpm = "latest"
 "npm:git-graftree" = "latest"
 
 # MCP
-"npm:@upstash/context7-mcp" = "1.0.12"
+"npm:@upstash/context7-mcp" = "1.0.20"
 "npm:@modelcontextprotocol/server-sequential-thinking" = "2025.7.1"
-"npm:@playwright/mcp" = "0.0.39"
-"npm:chrome-devtools-mcp" = "0.2.5"
+"npm:@playwright/mcp" = "0.0.41"
+"npm:chrome-devtools-mcp" = "0.6.0"
