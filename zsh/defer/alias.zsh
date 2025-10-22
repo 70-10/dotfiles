@@ -62,7 +62,6 @@ if type docker > /dev/null 2>&1; then
   alias d='docker'
 
   # application command
-  alias aws='docker run --rm -it -v ~/.aws:/root/.aws -v ${PWD}:/aws amazon/aws-cli'
   alias openapi-generator='docker run -it --rm -v ${PWD}:/local -w /local openapitools/openapi-generator-cli'
   alias radigo='docker run -it --rm -v ${PWD}:/output yyoshiki41/radigo:v0.11.0'
   alias kindlegen='docker run -it --rm -v ${PWD}:/kindle 7010/kindlegen'
