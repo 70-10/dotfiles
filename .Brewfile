@@ -1,7 +1,5 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/bundle"
-
 brew "bat"
 brew "bottom"
 brew "cmake"
@@ -35,7 +33,6 @@ cask "1password"
 cask "appcleaner"
 cask "arc"
 cask "caffeine"
-cask "claude-code"
 cask "docker"
 cask "ghostty"
 cask "google-chrome"
