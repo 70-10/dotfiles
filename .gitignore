@@ -3,3 +3,6 @@
 
 .codex/**
 !.codex/config.toml
+
+.copilot/**
+!.copilot/mcp-config.json
