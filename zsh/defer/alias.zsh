@@ -66,3 +66,10 @@ if type docker > /dev/null 2>&1; then
   alias radigo='docker run -it --rm -v ${PWD}:/output yyoshiki41/radigo:v0.11.0'
   alias kindlegen='docker run -it --rm -v ${PWD}:/kindle 7010/kindlegen'
 fi
+
+### Kiro
+if [[ -d "/Applications/Kiro.app" ]]; then
+  kiro() {
+    "/Applications/Kiro.app/Contents/Resources/app/bin/code" "$@"
+  }
+fi
