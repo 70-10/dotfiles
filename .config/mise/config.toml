@@ -10,7 +10,6 @@ aws-cli = "latest"
 ni = "latest"
 
 "npm:@google/gemini-cli" = "latest"
-# "npm:@github/copilot" = "0.0.330"
 "npm:@github/copilot" = "latest"
 "npm:clipboard-cli" = "latest"
 "npm:npm-check" = "latest"
@@ -19,6 +18,5 @@ ni = "latest"
 
 # MCP
 "npm:@upstash/context7-mcp" = "latest"
-"npm:@modelcontextprotocol/server-sequential-thinking" = "latest"
 "npm:@playwright/mcp" = "latest"
 "npm:chrome-devtools-mcp" = "latest"
