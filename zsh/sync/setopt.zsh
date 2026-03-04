@@ -8,7 +8,6 @@ SAVEHIST=100000
 
 setopt AUTO_MENU
 setopt AUTO_CD
-setopt AUTO_NAME_DIRS
 setopt AUTO_LIST
 setopt AUTO_PARAM_KEYS
 setopt AUTO_PARAM_SLASH
