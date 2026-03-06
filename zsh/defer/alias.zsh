@@ -16,7 +16,7 @@ alias du='du -h'
 alias h='history -i'
 
 if type eza > /dev/null 2>&1; then
-  alias ls='eza'
+  alias ls='eza --icons --git --no-user'
 else
   alias ls='ls -G'
 fi
