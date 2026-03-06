@@ -256,8 +256,8 @@
                 "KC_LALT",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "KC_DOT",
+                "KC_SLASH",
                 "KC_NO",
                 -1
             ],
@@ -746,8 +746,8 @@
     "encoder_layout": [
         [
             [
-                "KC_VOLD",
-                "KC_VOLU"
+                "LGUI(KC_MINUS)",
+                "LGUI(KC_SCOLON)"
             ],
             [
                 "KC_WH_U",
@@ -1342,6 +1342,8 @@
         "7": 250,
         "18": 20,
         "19": 20,
+        "22": 1,
+        "23": 0,
         "26": 1,
         "27": 120
     }
