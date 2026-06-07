@@ -8,6 +8,7 @@ font-feature = "-liga"
 
 
 keybind = shift+enter=text:\x1b\r
+keybind = ctrl+minus=text:\x1f
 
 
 keybind = ctrl+left=goto_split:left
@@ -21,3 +22,4 @@ keybind = ctrl+k=scroll_page_up
 copy-on-select = clipboard
 macos-option-as-alt = true
 confirm-close-surface = false
+window-save-state = always
