@@ -13,5 +13,6 @@ ni = "latest"
 "npm:trash-cli" = "latest"
 "npm:git-graftree" = "latest"
 "npm:pnpm" = "latest"
+"npm:@rivolink/leaf" = "latest"
 
 "npm:opencode-ai" = "latest"
