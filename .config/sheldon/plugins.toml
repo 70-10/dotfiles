@@ -10,14 +10,15 @@ apply = ['source']
 [templates]
 defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
 
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+apply = ['source']
+
 [plugins.compinit]
-inline = 'autoload -Uz compinit && zsh-defer compinit'
+inline = 'autoload -Uz compinit && compinit'
 
 [plugins.colors]
 inline = 'autoload -Uz colors && zsh-defer colors'
-
-[plugins.zsh-completions]
-github = "zsh-users/zsh-completions"
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
