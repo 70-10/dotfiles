@@ -8,6 +8,8 @@ subtext0 = "#abaca9"
 
 [keys]
 prefix = "ctrl+t"
+split_vertical = "ctrl+alt+v"
+split_horizontal = "ctrl+alt+h"
 
 [experimental]
 switch_ascii_input_source_in_prefix = true
