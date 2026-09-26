@@ -11,6 +11,6 @@ ni = "latest"
 "npm:@github/copilot" = "latest"
 "npm:clipboard-cli" = "latest"
 "npm:trash-cli" = "latest"
-"npm:pnpm" = "latest"
+pnpm = "latest"
 
 "npm:opencode-ai" = "latest"
