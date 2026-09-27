@@ -18,19 +18,3 @@ zsh -c "$(curl -fsSL https://dotfiles.70-10.net)"
 4. 設定ファイルをホームにリンクする
 
 既存の Mac でリンク先にファイルがある場合は止まる。既存のファイルを退避してから再実行する。
-
-## 変更の反映
-
-| 変更したもの | 反映 |
-|---|---|
-| リンク済みの設定ファイル | 不要（リンクなので即時） |
-| `[bootstrap.packages]` | `mise bootstrap packages apply` |
-| `[dotfiles]` | `mise dotfiles apply` |
-| それ以外 | `mise bootstrap` |
-
-## 構成
-
-- `.config/mise/config.toml`: パッケージ・リンク・macOS 設定の宣言
-- `install.sh`: 導入スクリプト（GitHub Actions で Pages に配信）
-- `zsh/`: Sheldon が読む zsh の設定
-- `Cornix.vil`: Cornix キーボードのキー割り当て
