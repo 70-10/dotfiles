@@ -16,6 +16,7 @@ dotfiles.root = "~/dev/src/github.com/70-10/dotfiles"
 "~/.config/mise" = { mode = "symlink" }
 "~/.config/nvim" = { mode = "symlink" }
 "~/.config/sheldon" = { mode = "symlink" }
+"~/.config/zsh" = { mode = "symlink" }
 "~/.config/herdr/config.toml" = { mode = "symlink" }
 "~/.config/npm/npmrc" = { mode = "symlink" }
 

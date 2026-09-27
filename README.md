@@ -18,3 +18,17 @@ zsh -c "$(curl -fsSL https://dotfiles.70-10.net)"
 4. 設定ファイルをホームにリンクする
 
 既存の Mac でリンク先にファイルがある場合は止まる。既存のファイルを退避してから再実行する。
+
+## zsh の追加設定
+
+`.config/zsh/` は mise が `~/.config/zsh` にリンクし、Sheldon がそこから設定を読み込む。
+
+以前の `zsh/` 配置を使っている環境では、リポジトリを更新した後に次を実行する。
+リンク先に既存のファイルやディレクトリがある場合は、退避してから再実行する。
+
+```sh
+mise dotfiles apply ~/.config/zsh
+sheldon source --relock > /dev/null
+```
+
+その後、新しい対話シェルを起動する。

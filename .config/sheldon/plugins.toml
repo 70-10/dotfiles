@@ -33,10 +33,10 @@ github = "paulirish/git-open"
 github = "lukechilds/zsh-better-npm-completion"
 
 [plugins.dotfiles-sync]
-local = "~/dev/src/github.com/70-10/dotfiles/zsh/sync"
+local = "~/.config/zsh/sync"
 use = ["*.zsh"]
 apply = ["source"]
 
 [plugins.dotfiles-defer]
-local = "~/dev/src/github.com/70-10/dotfiles/zsh/defer"
+local = "~/.config/zsh/defer"
 use = ["*.zsh"]
