@@ -19,9 +19,28 @@ peco-history() {
 }
 
 peco-aws-credentials() {
-    local aws_credentials=$(cat ~/.aws/credentials | grep "\[" | sed -e 's/\[//g' | sed -e 's/\]//g' | peco --query "$LBUFFER")
-    if [ -n "$aws_credentials" ]; then
-    BUFFER="AWS_PROFILE=${aws_credentials}"
-    CURSOR=$#BUFFER
+    local profiles=""
+
+    # credentials ファイルからプロファイル名を抽出
+    if [ -f ~/.aws/credentials ]; then
+        profiles=$(cat ~/.aws/credentials | grep "^\[" | sed -e 's/\[//g' | sed -e 's/\]//g')
+    fi
+
+    # config ファイルから [profile xxx] 形式のプロファイル名を抽出（[default] は除外）
+    if [ -f ~/.aws/config ]; then
+        local config_profiles=$(cat ~/.aws/config | grep "^\[profile " | sed -e 's/\[profile //g' | sed -e 's/\]//g')
+        if [ -n "$profiles" ]; then
+            profiles="${profiles}\n${config_profiles}"
+        else
+            profiles="${config_profiles}"
+        fi
+    fi
+
+    # 重複を除去してソート、peco で選択
+    local selected_profile=$(echo -e "$profiles" | sort -u | peco --query "$LBUFFER")
+
+    if [ -n "$selected_profile" ]; then
+        BUFFER="AWS_PROFILE=${selected_profile}"
+        CURSOR=$#BUFFER
     fi
 }
