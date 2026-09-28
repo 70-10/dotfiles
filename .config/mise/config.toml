@@ -68,6 +68,82 @@ dotfiles.root = "~/dev/src/github.com/70-10/dotfiles"
 [bootstrap.macos.keyboard]
 initial_key_repeat = 15
 key_repeat = 1
+fn_state = true
+
+[bootstrap.macos.defaults]
+"com.apple.HIToolbox" = { AppleFnUsageType = 0 }
+
+[[bootstrap.macos.defaults_entries]] # Move focus to next window
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["27"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 122, 9437184] } }
+
+[[bootstrap.macos.defaults_entries]] # Mission Control
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["32"]
+value = { enabled = false, value = { type = "standard", parameters = [65535, 126, 10747904] } }
+
+[[bootstrap.macos.defaults_entries]] # Application windows
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["33"]
+value = { enabled = false, value = { type = "standard", parameters = [65535, 125, 10747904] } }
+
+[[bootstrap.macos.defaults_entries]] # Move focus to window drawer
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["51"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 122, 9961472] } }
+
+[[bootstrap.macos.defaults_entries]] # Select the previous input source
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["60"]
+value = { enabled = true, value = { type = "standard", parameters = [32, 49, 1048576] } }
+
+[[bootstrap.macos.defaults_entries]] # Select next source in Input menu
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["61"]
+value = { enabled = true, value = { type = "standard", parameters = [32, 49, 1572864] } }
+
+[[bootstrap.macos.defaults_entries]] # Show Spotlight search
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["64"]
+value = { enabled = false, value = { type = "standard", parameters = [65535, 49, 1048576] } }
+
+[[bootstrap.macos.defaults_entries]] # Show Finder search window
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["65"]
+value = { enabled = false, value = { type = "standard", parameters = [65535, 49, 1572864] } }
+
+[[bootstrap.macos.defaults_entries]] # Move left a space
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["79"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 123, 11534336] } }
+
+[[bootstrap.macos.defaults_entries]] # Move left a space (shift)
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["80"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 123, 11665408] } }
+
+[[bootstrap.macos.defaults_entries]] # Move right a space
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["81"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 124, 11534336] } }
+
+[[bootstrap.macos.defaults_entries]] # Move right a space (shift)
+domain = "com.apple.symbolichotkeys"
+key = "AppleSymbolicHotKeys"
+path = ["82"]
+value = { enabled = true, value = { type = "standard", parameters = [65535, 124, 11665408] } }
 
 [tasks.bootstrap]
 run = '''
