@@ -6,3 +6,5 @@ elif [[ $ARCH == x86_64 ]]; then
     # Intel Mac
 	eval $(/usr/local/bin/brew shellenv)
 fi
+
+[[ -r ~/.zprofile.local ]] && source ~/.zprofile.local

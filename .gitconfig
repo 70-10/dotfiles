@@ -4,8 +4,52 @@
   ap = add -p
   ba = branch -a
   bd = branch -d
-  bdm = !git branch --merged | grep -v '*' | xargs -I{} git branch -d {}
-  bm = !git branch --merged | grep -v '*'
+  bdm = "!f(){ \
+    out=$(git bm); \
+    if [ -z \"$out\" ]; then return 0; fi; \
+    echo \"$out\"; \
+    printf 'Delete the branches listed above? [y/N] '; \
+    ans=; read -r ans || ans=; \
+    case \"$ans\" in y|Y) ;; *) echo 'aborted'; return 0;; esac; \
+    mainwt=$(git worktree list --porcelain | sed -n '1s/^worktree //p'); \
+    curwt=$(git rev-parse --show-toplevel); \
+    git for-each-ref --merged HEAD --format='%(refname:short)%0a%(worktreepath)' refs/heads | { \
+      rc=0; \
+      while read -r b; do \
+        read -r w; \
+        if [ \"$w\" = \"$mainwt\" ] || [ \"$w\" = \"$curwt\" ]; then continue; fi; \
+        if [ -n \"$w\" ]; then \
+          if [ -n \"$(git -C \"$w\" status --porcelain)\" ]; then \
+            echo \"skipped $b (worktree has local changes: $w)\"; \
+            continue; \
+          fi; \
+          git worktree remove \"$w\" || { rc=1; continue; }; \
+        fi; \
+        git branch -d \"$b\" || rc=1; \
+      done; \
+      exit $rc; \
+    }; \
+  }; f"
+  bm = "!f(){ \
+    mainwt=$(git worktree list --porcelain | sed -n '1s/^worktree //p'); \
+    curwt=$(git rev-parse --show-toplevel); \
+    out=$(git for-each-ref --merged HEAD --format='%(refname:short)%0a%(worktreepath)' refs/heads | \
+      while read -r b; do \
+        read -r w; \
+        if [ \"$w\" = \"$mainwt\" ] || [ \"$w\" = \"$curwt\" ]; then continue; fi; \
+        if [ -z \"$w\" ]; then \
+          echo \"  $b\"; \
+        elif [ -z \"$(git -C \"$w\" status --porcelain)\" ]; then \
+          echo \"  $b  (worktree: $w)\"; \
+        else \
+          echo \"  $b  [skip] worktree has local changes: $w\"; \
+          git -C \"$w\" status --porcelain | sed 's/^/        /'; \
+        fi; \
+      done); \
+    if [ -z \"$out\" ]; then echo 'no merged branches to clean up' >&2; return 0; fi; \
+    echo 'merged branches:'; \
+    echo \"$out\"; \
+  }; f"
   branches = branch -a
   bv = branch -vv
   cm = commit
@@ -40,9 +84,9 @@
   wt-add = "!f(){ \
     if [ -z \"$1\" ]; then echo 'Usage: git wt-add <branch>' >&2; exit 1; fi; \
     branch=$1; \
-    root=${GIT_WORKTREE_ROOT:-$HOME/dev/src/local/git-worktrees}; \
-    repo=$(basename \"$(git rev-parse --show-toplevel)\"); \
-    path=\"$root/$repo/$branch\"; \
+    git_dir=$(git rev-parse --git-dir); \
+    root=\"$git_dir/worktree\"; \
+    path=\"$root/$branch\"; \
     mkdir -p \"$path\"; \
     git worktree add -b \"$branch\" \"$path\" HEAD 2>/dev/null || git worktree add \"$path\" \"$branch\"; \
   }; f"
@@ -73,3 +117,5 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	defaultBranch = main
+[include]
+	path = ~/.gitconfig.local
