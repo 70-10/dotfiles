@@ -1,0 +1,2 @@
+# cmux 内蔵 Ghostty 用設定（standalone Ghostty.app の config とは別物）
+keybind = cmd+semicolon=increase_font_size:1
