@@ -1,3 +1,79 @@
+[settings]
+dotfiles.root = "~/dev/src/github.com/70-10/dotfiles"
+
+[dotfiles]
+"~/.editorconfig" = { mode = "symlink" }
+"~/.gitattributes" = { mode = "symlink" }
+"~/.gitconfig" = { mode = "symlink" }
+"~/.vimrc" = { mode = "symlink" }
+"~/.zlogin" = { mode = "symlink" }
+"~/.zlogout" = { mode = "symlink" }
+"~/.zprofile" = { mode = "symlink" }
+"~/.zshenv" = { mode = "symlink" }
+"~/.zshrc" = { mode = "symlink" }
+"~/.config/ghostty" = { mode = "symlink" }
+"~/.config/git" = { mode = "symlink" }
+"~/.config/mise" = { mode = "symlink" }
+"~/.config/nvim" = { mode = "symlink" }
+"~/.config/sheldon" = { mode = "symlink" }
+"~/.config/zsh" = { mode = "symlink" }
+"~/.config/herdr/config.toml" = { mode = "symlink" }
+"~/.config/npm/npmrc" = { mode = "symlink" }
+
+[bootstrap.packages]
+"brew:bat" = "latest"
+"brew:cmake" = "latest"
+"brew:colordiff" = "latest"
+"brew:curl" = "latest"
+"brew:eza" = "latest"
+"brew:fd" = "latest"
+"brew:gawk" = "latest"
+"brew:ghq" = "latest"
+"brew:gibo" = "latest"
+"brew:git" = "latest"
+"brew:git-secrets" = "latest"
+"brew:httpie" = "latest"
+"brew:jo" = "latest"
+"brew:jq" = "latest"
+"brew:mas" = "latest"
+"brew:neovim" = "latest"
+"brew:nmap" = "latest"
+"brew:peco" = "latest"
+"brew:sheldon" = "latest"
+"brew:the_silver_searcher" = "latest"
+"brew:tig" = "latest"
+"brew:tree" = "latest"
+"brew:vim" = "latest"
+"brew:wget" = "latest"
+
+"brew-cask:1password" = "latest"
+"brew-cask:caffeine" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:google-japanese-ime" = "latest"
+"brew-cask:logi-options+" = "latest"
+"brew-cask:obsidian" = "latest"
+"brew-cask:qlmarkdown" = "latest"
+"brew-cask:sequel-ace" = "latest"
+"brew-cask:visual-studio-code" = "latest"
+"brew-cask:font-camingocode" = "latest"
+"brew-cask:font-hackgen" = "latest"
+"brew-cask:font-jetbrains-mono" = "latest"
+
+"mas:1024640650" = "latest" # CotEditor
+"mas:441258766" = "latest"  # Magnet
+
+[bootstrap.macos.keyboard]
+initial_key_repeat = 15
+key_repeat = 1
+
+[tasks.bootstrap]
+run = '''
+test -f "$HOME/.local/share/nvim/site/autoload/plug.vim" ||
+  curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+'''
+
 [tools]
 bun = "latest"
 deno = "latest"
@@ -11,6 +87,6 @@ ni = "latest"
 "npm:@github/copilot" = "latest"
 "npm:clipboard-cli" = "latest"
 "npm:trash-cli" = "latest"
-"npm:pnpm" = "latest"
+pnpm = "latest"
 
 "npm:opencode-ai" = "latest"

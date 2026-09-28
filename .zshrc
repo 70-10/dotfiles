@@ -1,3 +1,5 @@
+export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
+
 typeset -Ua fpath
 fpath=(${^fpath}(N-/))
 
@@ -7,7 +9,6 @@ then
   fpath=(
     "$_brew_prefix/share/zsh/site-functions"
     $fpath
-    "$_brew_prefix/share/zsh/functions"
   )
   unset _brew_prefix
 fi
