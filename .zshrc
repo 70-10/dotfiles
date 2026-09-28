@@ -24,11 +24,13 @@ typeset +x FPATH
   local df="$HOME/dev/src/github.com/70-10/dotfiles"
   if [[ ! -r $cache || $toml -nt $cache || $df/.config/zsh/sync -nt $cache || $df/.config/zsh/defer -nt $cache ]]; then
     [[ -d $cache_dir ]] || mkdir -p $cache_dir
-    if sheldon source > $cache.tmp 2>/dev/null; then
+    # sheldon は source 先が無くても exit 0 で ERROR を出すだけなので、ERROR があればキャッシュしない
+    local err
+    if err=$(sheldon source 2>&1 > $cache.tmp) && [[ $err != *ERROR* ]]; then
       mv $cache.tmp $cache
     else
+      source $cache.tmp
       rm -f $cache.tmp
-      eval "$(sheldon source)"
       return
     fi
   fi
