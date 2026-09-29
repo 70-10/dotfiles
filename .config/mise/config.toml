@@ -19,6 +19,7 @@ dotfiles.root = "~/dev/src/github.com/70-10/dotfiles"
 "~/.config/zsh" = { mode = "symlink" }
 "~/.config/herdr/config.toml" = { mode = "symlink" }
 "~/.config/npm/npmrc" = { mode = "symlink" }
+"~/dev/src/github.com/.mise.toml" = { mode = "symlink" }
 
 [bootstrap.packages]
 "brew:bat" = "latest"

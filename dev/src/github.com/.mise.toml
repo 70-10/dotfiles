@@ -1,0 +1,2 @@
+[env]
+GH_TOKEN = "{{exec(command='gh auth token -u 70-10')}}"

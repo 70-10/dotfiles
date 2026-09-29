@@ -117,5 +117,8 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	defaultBranch = main
+[user]
+	name = 70_10
+	email = 7010.dev@gmail.com
 [include]
 	path = ~/.gitconfig.local
