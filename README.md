@@ -18,3 +18,10 @@ zsh -c "$(curl -fsSL https://dotfiles.70-10.net)"
 4. 設定ファイルをホームにリンクする
 
 既存の Mac でリンク先にファイルがある場合は止まる。既存のファイルを退避してから再実行する。
+
+`~/dev/src/github.com/` の下では、`.mise.toml` が `gh auth token -u 70-10` で取ったトークンを `GH_TOKEN` に入れる。mise は trust していない設定ファイルを読まないので、`install.sh` のあとに一度だけ次を実行する。`gh` にログインしていないと、このディレクトリの下で mise がエラーになるため、先にログインする。
+
+```sh
+gh auth login
+mise trust ~/dev/src/github.com/.mise.toml
+```
