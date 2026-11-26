@@ -169,3 +169,4 @@ ni = "latest"
 pnpm = "latest"
 
 "npm:opencode-ai" = "latest"
+"github:open-telemetry/opentelemetry-collector-releases" = { version = "0.165.0", asset_pattern = "otelcol-contrib_*_darwin_arm64.tar.gz" }
